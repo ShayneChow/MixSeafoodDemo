@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2692EC2C1A762CF600C5201F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2B1A762CF600C5201F /* main.m */; };
+		2692EC2F1A762CF600C5201F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2E1A762CF600C5201F /* AppDelegate.m */; };
+		2692EC351A762CF600C5201F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC331A762CF600C5201F /* Main.storyboard */; };
+		2692EC371A762CF600C5201F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC361A762CF600C5201F /* Images.xcassets */; };
+		2692EC3A1A762CF600C5201F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC381A762CF600C5201F /* LaunchScreen.xib */; };
+		2692EC461A762CF600C5201F /* MixSeafoodDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC451A762CF600C5201F /* MixSeafoodDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2692EC401A762CF600C5201F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2692EC1E1A762CF600C5201F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2692EC251A762CF600C5201F;
+			remoteInfo = MixSeafoodDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2692EC261A762CF600C5201F /* MixSeafoodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixSeafoodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2692EC2A1A762CF600C5201F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2692EC2B1A762CF600C5201F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2692EC2D1A762CF600C5201F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2692EC2E1A762CF600C5201F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2692EC341A762CF600C5201F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2692EC361A762CF600C5201F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2692EC391A762CF600C5201F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2692EC3F1A762CF600C5201F /* MixSeafoodDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixSeafoodDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2692EC441A762CF600C5201F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2692EC451A762CF600C5201F /* MixSeafoodDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixSeafoodDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2692EC231A762CF600C5201F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2692EC3C1A762CF600C5201F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2692EC1D1A762CF600C5201F = {
+			isa = PBXGroup;
+			children = (
+				2692EC281A762CF600C5201F /* MixSeafoodDemo */,
+				2692EC421A762CF600C5201F /* MixSeafoodDemoTests */,
+				2692EC271A762CF600C5201F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2692EC271A762CF600C5201F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2692EC261A762CF600C5201F /* MixSeafoodDemo.app */,
+				2692EC3F1A762CF600C5201F /* MixSeafoodDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2692EC281A762CF600C5201F /* MixSeafoodDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2692EC2D1A762CF600C5201F /* AppDelegate.h */,
+				2692EC2E1A762CF600C5201F /* AppDelegate.m */,
+				2692EC331A762CF600C5201F /* Main.storyboard */,
+				2692EC361A762CF600C5201F /* Images.xcassets */,
+				2692EC381A762CF600C5201F /* LaunchScreen.xib */,
+				2692EC291A762CF600C5201F /* Supporting Files */,
+			);
+			path = MixSeafoodDemo;
+			sourceTree = "<group>";
+		};
+		2692EC291A762CF600C5201F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2692EC2A1A762CF600C5201F /* Info.plist */,
+				2692EC2B1A762CF600C5201F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2692EC421A762CF600C5201F /* MixSeafoodDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2692EC451A762CF600C5201F /* MixSeafoodDemoTests.m */,
+				2692EC431A762CF600C5201F /* Supporting Files */,
+			);
+			path = MixSeafoodDemoTests;
+			sourceTree = "<group>";
+		};
+		2692EC431A762CF600C5201F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2692EC441A762CF600C5201F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2692EC251A762CF600C5201F /* MixSeafoodDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2692EC491A762CF600C5201F /* Build configuration list for PBXNativeTarget "MixSeafoodDemo" */;
+			buildPhases = (
+				2692EC221A762CF600C5201F /* Sources */,
+				2692EC231A762CF600C5201F /* Frameworks */,
+				2692EC241A762CF600C5201F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixSeafoodDemo;
+			productName = MixSeafoodDemo;
+			productReference = 2692EC261A762CF600C5201F /* MixSeafoodDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2692EC3E1A762CF600C5201F /* MixSeafoodDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2692EC4C1A762CF600C5201F /* Build configuration list for PBXNativeTarget "MixSeafoodDemoTests" */;
+			buildPhases = (
+				2692EC3B1A762CF600C5201F /* Sources */,
+				2692EC3C1A762CF600C5201F /* Frameworks */,
+				2692EC3D1A762CF600C5201F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2692EC411A762CF600C5201F /* PBXTargetDependency */,
+			);
+			name = MixSeafoodDemoTests;
+			productName = MixSeafoodDemoTests;
+			productReference = 2692EC3F1A762CF600C5201F /* MixSeafoodDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2692EC1E1A762CF600C5201F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ShayneChow;
+				TargetAttributes = {
+					2692EC251A762CF600C5201F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					2692EC3E1A762CF600C5201F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 2692EC251A762CF600C5201F;
+					};
+				};
+			};
+			buildConfigurationList = 2692EC211A762CF600C5201F /* Build configuration list for PBXProject "MixSeafoodDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2692EC1D1A762CF600C5201F;
+			productRefGroup = 2692EC271A762CF600C5201F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2692EC251A762CF600C5201F /* MixSeafoodDemo */,
+				2692EC3E1A762CF600C5201F /* MixSeafoodDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2692EC241A762CF600C5201F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2692EC351A762CF600C5201F /* Main.storyboard in Resources */,
+				2692EC3A1A762CF600C5201F /* LaunchScreen.xib in Resources */,
+				2692EC371A762CF600C5201F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2692EC3D1A762CF600C5201F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2692EC221A762CF600C5201F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2692EC2F1A762CF600C5201F /* AppDelegate.m in Sources */,
+				2692EC2C1A762CF600C5201F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2692EC3B1A762CF600C5201F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2692EC461A762CF600C5201F /* MixSeafoodDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2692EC411A762CF600C5201F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2692EC251A762CF600C5201F /* MixSeafoodDemo */;
+			targetProxy = 2692EC401A762CF600C5201F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2692EC331A762CF600C5201F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2692EC341A762CF600C5201F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2692EC381A762CF600C5201F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2692EC391A762CF600C5201F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2692EC471A762CF600C5201F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2692EC481A762CF600C5201F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2692EC4A1A762CF600C5201F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MixSeafoodDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2692EC4B1A762CF600C5201F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MixSeafoodDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2692EC4D1A762CF600C5201F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MixSeafoodDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixSeafoodDemo.app/MixSeafoodDemo";
+			};
+			name = Debug;
+		};
+		2692EC4E1A762CF600C5201F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MixSeafoodDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixSeafoodDemo.app/MixSeafoodDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2692EC211A762CF600C5201F /* Build configuration list for PBXProject "MixSeafoodDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2692EC471A762CF600C5201F /* Debug */,
+				2692EC481A762CF600C5201F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2692EC491A762CF600C5201F /* Build configuration list for PBXNativeTarget "MixSeafoodDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2692EC4A1A762CF600C5201F /* Debug */,
+				2692EC4B1A762CF600C5201F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2692EC4C1A762CF600C5201F /* Build configuration list for PBXNativeTarget "MixSeafoodDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2692EC4D1A762CF600C5201F /* Debug */,
+				2692EC4E1A762CF600C5201F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2692EC1E1A762CF600C5201F /* Project object */;
+}
