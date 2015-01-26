@@ -14,6 +14,19 @@
 
 @implementation HotViewController
 
+#pragma mark - ViewController-life
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = @"热卖推荐";
+        
+        //设置图标、标题(tabBarItem是显示在tabBar上的标签)
+        self.tabBarItem.title=@"最 热";//注意如果这个标题不设置默认在页签上显示视图控制器标题
+        self.tabBarItem.image=[UIImage imageNamed:@"light"];//默认图片
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
