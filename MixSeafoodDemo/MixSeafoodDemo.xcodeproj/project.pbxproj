@@ -13,6 +13,19 @@
 		2692EC371A762CF600C5201F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC361A762CF600C5201F /* Images.xcassets */; };
 		2692EC3A1A762CF600C5201F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC381A762CF600C5201F /* LaunchScreen.xib */; };
 		2692EC461A762CF600C5201F /* MixSeafoodDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC451A762CF600C5201F /* MixSeafoodDemoTests.m */; };
+		2692EC521A76349B00C5201F /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC501A76349B00C5201F /* logo1.png */; };
+		2692EC531A76349B00C5201F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC511A76349B00C5201F /* icon.png */; };
+		2692EC5F1A76402A00C5201F /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC541A76402A00C5201F /* edit.png */; };
+		2692EC601A76402A00C5201F /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC551A76402A00C5201F /* mail.png */; };
+		2692EC611A76402A00C5201F /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC561A76402A00C5201F /* home.png */; };
+		2692EC621A76402A00C5201F /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC571A76402A00C5201F /* light.png */; };
+		2692EC631A76402A00C5201F /* pinpoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC581A76402A00C5201F /* pinpoint.png */; };
+		2692EC641A76402A00C5201F /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC591A76402A00C5201F /* profile.png */; };
+		2692EC651A76402A00C5201F /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5A1A76402A00C5201F /* save.png */; };
+		2692EC661A76402A00C5201F /* settings 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5B1A76402A00C5201F /* settings 1.png */; };
+		2692EC671A76402A00C5201F /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5C1A76402A00C5201F /* share.png */; };
+		2692EC681A76402A00C5201F /* spinner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5D1A76402A00C5201F /* spinner.png */; };
+		2692EC691A76402A00C5201F /* tags.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5E1A76402A00C5201F /* tags.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +50,19 @@
 		2692EC3F1A762CF600C5201F /* MixSeafoodDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixSeafoodDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2692EC441A762CF600C5201F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2692EC451A762CF600C5201F /* MixSeafoodDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixSeafoodDemoTests.m; sourceTree = "<group>"; };
+		2692EC501A76349B00C5201F /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
+		2692EC511A76349B00C5201F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2692EC541A76402A00C5201F /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		2692EC551A76402A00C5201F /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		2692EC561A76402A00C5201F /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		2692EC571A76402A00C5201F /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light.png; sourceTree = "<group>"; };
+		2692EC581A76402A00C5201F /* pinpoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinpoint.png; sourceTree = "<group>"; };
+		2692EC591A76402A00C5201F /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		2692EC5A1A76402A00C5201F /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		2692EC5B1A76402A00C5201F /* settings 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings 1.png"; sourceTree = "<group>"; };
+		2692EC5C1A76402A00C5201F /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		2692EC5D1A76402A00C5201F /* spinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spinner.png; sourceTree = "<group>"; };
+		2692EC5E1A76402A00C5201F /* tags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tags.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +117,7 @@
 		2692EC291A762CF600C5201F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2692EC4F1A76346F00C5201F /* images */,
 				2692EC2A1A762CF600C5201F /* Info.plist */,
 				2692EC2B1A762CF600C5201F /* main.m */,
 			);
@@ -112,6 +139,26 @@
 				2692EC441A762CF600C5201F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2692EC4F1A76346F00C5201F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2692EC541A76402A00C5201F /* edit.png */,
+				2692EC551A76402A00C5201F /* mail.png */,
+				2692EC561A76402A00C5201F /* home.png */,
+				2692EC571A76402A00C5201F /* light.png */,
+				2692EC581A76402A00C5201F /* pinpoint.png */,
+				2692EC591A76402A00C5201F /* profile.png */,
+				2692EC5A1A76402A00C5201F /* save.png */,
+				2692EC5B1A76402A00C5201F /* settings 1.png */,
+				2692EC5C1A76402A00C5201F /* share.png */,
+				2692EC5D1A76402A00C5201F /* spinner.png */,
+				2692EC5E1A76402A00C5201F /* tags.png */,
+				2692EC501A76349B00C5201F /* logo1.png */,
+				2692EC511A76349B00C5201F /* icon.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,8 +241,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2692EC611A76402A00C5201F /* home.png in Resources */,
+				2692EC5F1A76402A00C5201F /* edit.png in Resources */,
+				2692EC651A76402A00C5201F /* save.png in Resources */,
+				2692EC671A76402A00C5201F /* share.png in Resources */,
 				2692EC351A762CF600C5201F /* Main.storyboard in Resources */,
+				2692EC631A76402A00C5201F /* pinpoint.png in Resources */,
+				2692EC531A76349B00C5201F /* icon.png in Resources */,
 				2692EC3A1A762CF600C5201F /* LaunchScreen.xib in Resources */,
+				2692EC621A76402A00C5201F /* light.png in Resources */,
+				2692EC661A76402A00C5201F /* settings 1.png in Resources */,
+				2692EC691A76402A00C5201F /* tags.png in Resources */,
+				2692EC681A76402A00C5201F /* spinner.png in Resources */,
+				2692EC521A76349B00C5201F /* logo1.png in Resources */,
+				2692EC641A76402A00C5201F /* profile.png in Resources */,
+				2692EC601A76402A00C5201F /* mail.png in Resources */,
 				2692EC371A762CF600C5201F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MixSeafoodDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -347,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MixSeafoodDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
