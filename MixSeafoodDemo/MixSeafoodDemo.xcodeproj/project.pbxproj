@@ -27,6 +27,11 @@
 		2692EC681A76402A00C5201F /* spinner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5D1A76402A00C5201F /* spinner.png */; };
 		2692EC691A76402A00C5201F /* tags.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5E1A76402A00C5201F /* tags.png */; };
 		2692EC6F1A7642E900C5201F /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC6E1A7642E900C5201F /* MainTabBarViewController.m */; };
+		2692EC721A7646D800C5201F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC711A7646D800C5201F /* HomeViewController.m */; };
+		2692EC791A7648ED00C5201F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC781A7648ED00C5201F /* MenuViewController.m */; };
+		2692EC7C1A7648FD00C5201F /* HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC7B1A7648FD00C5201F /* HotViewController.m */; };
+		2692EC7F1A76490B00C5201F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC7E1A76490B00C5201F /* ProfileViewController.m */; };
+		2692EC821A76495500C5201F /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC811A76495500C5201F /* BaseNavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,16 @@
 		2692EC5E1A76402A00C5201F /* tags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tags.png; sourceTree = "<group>"; };
 		2692EC6D1A7642E900C5201F /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		2692EC6E1A7642E900C5201F /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		2692EC701A7646D800C5201F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2692EC711A7646D800C5201F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2692EC771A7648ED00C5201F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		2692EC781A7648ED00C5201F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		2692EC7A1A7648FD00C5201F /* HotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewController.h; sourceTree = "<group>"; };
+		2692EC7B1A7648FD00C5201F /* HotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewController.m; sourceTree = "<group>"; };
+		2692EC7D1A76490B00C5201F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		2692EC7E1A76490B00C5201F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		2692EC801A76495500C5201F /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		2692EC811A76495500C5201F /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +126,12 @@
 				2692EC2E1A762CF600C5201F /* AppDelegate.m */,
 				2692EC6D1A7642E900C5201F /* MainTabBarViewController.h */,
 				2692EC6E1A7642E900C5201F /* MainTabBarViewController.m */,
+				2692EC801A76495500C5201F /* BaseNavigationViewController.h */,
+				2692EC811A76495500C5201F /* BaseNavigationViewController.m */,
+				2692EC731A7646F700C5201F /* Home */,
+				2692EC741A76470800C5201F /* Menu */,
+				2692EC751A76477700C5201F /* Hot */,
+				2692EC761A76478E00C5201F /* Profile */,
 				2692EC331A762CF600C5201F /* Main.storyboard */,
 				2692EC361A762CF600C5201F /* Images.xcassets */,
 				2692EC381A762CF600C5201F /* LaunchScreen.xib */,
@@ -164,6 +185,42 @@
 				2692EC511A76349B00C5201F /* icon.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		2692EC731A7646F700C5201F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2692EC701A7646D800C5201F /* HomeViewController.h */,
+				2692EC711A7646D800C5201F /* HomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		2692EC741A76470800C5201F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2692EC771A7648ED00C5201F /* MenuViewController.h */,
+				2692EC781A7648ED00C5201F /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		2692EC751A76477700C5201F /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				2692EC7A1A7648FD00C5201F /* HotViewController.h */,
+				2692EC7B1A7648FD00C5201F /* HotViewController.m */,
+			);
+			name = Hot;
+			sourceTree = "<group>";
+		};
+		2692EC761A76478E00C5201F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2692EC7D1A76490B00C5201F /* ProfileViewController.h */,
+				2692EC7E1A76490B00C5201F /* ProfileViewController.m */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2692EC7C1A7648FD00C5201F /* HotViewController.m in Sources */,
 				2692EC6F1A7642E900C5201F /* MainTabBarViewController.m in Sources */,
 				2692EC2F1A762CF600C5201F /* AppDelegate.m in Sources */,
+				2692EC821A76495500C5201F /* BaseNavigationViewController.m in Sources */,
 				2692EC2C1A762CF600C5201F /* main.m in Sources */,
+				2692EC7F1A76490B00C5201F /* ProfileViewController.m in Sources */,
+				2692EC721A7646D800C5201F /* HomeViewController.m in Sources */,
+				2692EC791A7648ED00C5201F /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
