@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26290E131A773AE4001CA145 /* TabBar-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E121A773AE4001CA145 /* TabBar-BG.png */; };
 		2692EC2C1A762CF600C5201F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2B1A762CF600C5201F /* main.m */; };
 		2692EC2F1A762CF600C5201F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2E1A762CF600C5201F /* AppDelegate.m */; };
 		2692EC351A762CF600C5201F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC331A762CF600C5201F /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26290E121A773AE4001CA145 /* TabBar-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar-BG.png"; sourceTree = "<group>"; };
 		2692EC261A762CF600C5201F /* MixSeafoodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixSeafoodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2692EC2A1A762CF600C5201F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2692EC2B1A762CF600C5201F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		2692EC4F1A76346F00C5201F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				26290E121A773AE4001CA145 /* TabBar-BG.png */,
 				2692EC541A76402A00C5201F /* edit.png */,
 				2692EC551A76402A00C5201F /* mail.png */,
 				2692EC561A76402A00C5201F /* home.png */,
@@ -306,6 +309,7 @@
 				2692EC611A76402A00C5201F /* home.png in Resources */,
 				2692EC5F1A76402A00C5201F /* edit.png in Resources */,
 				2692EC651A76402A00C5201F /* save.png in Resources */,
+				26290E131A773AE4001CA145 /* TabBar-BG.png in Resources */,
 				2692EC671A76402A00C5201F /* share.png in Resources */,
 				2692EC351A762CF600C5201F /* Main.storyboard in Resources */,
 				2692EC631A76402A00C5201F /* pinpoint.png in Resources */,
@@ -536,6 +540,7 @@
 				2692EC4B1A762CF600C5201F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2692EC4C1A762CF600C5201F /* Build configuration list for PBXNativeTarget "MixSeafoodDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +549,7 @@
 				2692EC4E1A762CF600C5201F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

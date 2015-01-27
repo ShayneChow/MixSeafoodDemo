@@ -19,10 +19,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"首页";
-        
-        //设置图标、标题(tabBarItem是显示在tabBar上的标签)
-        self.tabBarItem.title=@"首 页";//注意如果这个标题不设置默认在页签上显示视图控制器标题
-        self.tabBarItem.image=[UIImage imageNamed:@"home"];//默认图片
     }
     return self;
 }

@@ -19,10 +19,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = @"菜单";
-        
-        //设置图标、标题(tabBarItem是显示在tabBar上的标签)
-        self.tabBarItem.title=@"菜 单";//注意如果这个标题不设置默认在页签上显示视图控制器标题
-        self.tabBarItem.image=[UIImage imageNamed:@"tags"];//默认图片
     }
     return self;
 }
