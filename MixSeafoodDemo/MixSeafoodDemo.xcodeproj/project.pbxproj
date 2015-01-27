@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		26290E131A773AE4001CA145 /* TabBar-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E121A773AE4001CA145 /* TabBar-BG.png */; };
+		26290E161A77912C001CA145 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E141A77912C001CA145 /* food.png */; };
+		26290E171A77912C001CA145 /* mixseafood.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E151A77912C001CA145 /* mixseafood.png */; };
+		26290E1B1A7792C3001CA145 /* SeaFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 26290E1A1A7792C3001CA145 /* SeaFood.m */; };
 		2692EC2C1A762CF600C5201F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2B1A762CF600C5201F /* main.m */; };
 		2692EC2F1A762CF600C5201F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2E1A762CF600C5201F /* AppDelegate.m */; };
 		2692EC351A762CF600C5201F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC331A762CF600C5201F /* Main.storyboard */; };
@@ -47,6 +50,10 @@
 
 /* Begin PBXFileReference section */
 		26290E121A773AE4001CA145 /* TabBar-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar-BG.png"; sourceTree = "<group>"; };
+		26290E141A77912C001CA145 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
+		26290E151A77912C001CA145 /* mixseafood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixseafood.png; sourceTree = "<group>"; };
+		26290E191A7792C3001CA145 /* SeaFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaFood.h; sourceTree = "<group>"; };
+		26290E1A1A7792C3001CA145 /* SeaFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaFood.m; sourceTree = "<group>"; };
 		2692EC261A762CF600C5201F /* MixSeafoodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixSeafoodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2692EC2A1A762CF600C5201F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2692EC2B1A762CF600C5201F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26290E181A77928A001CA145 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26290E191A7792C3001CA145 /* SeaFood.h */,
+				26290E1A1A7792C3001CA145 /* SeaFood.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		2692EC1D1A762CF600C5201F = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +146,7 @@
 				2692EC6E1A7642E900C5201F /* MainTabBarViewController.m */,
 				2692EC801A76495500C5201F /* BaseNavigationViewController.h */,
 				2692EC811A76495500C5201F /* BaseNavigationViewController.m */,
+				26290E181A77928A001CA145 /* Model */,
 				2692EC731A7646F700C5201F /* Home */,
 				2692EC741A76470800C5201F /* Menu */,
 				2692EC751A76477700C5201F /* Hot */,
@@ -172,6 +189,8 @@
 		2692EC4F1A76346F00C5201F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				26290E141A77912C001CA145 /* food.png */,
+				26290E151A77912C001CA145 /* mixseafood.png */,
 				26290E121A773AE4001CA145 /* TabBar-BG.png */,
 				2692EC541A76402A00C5201F /* edit.png */,
 				2692EC551A76402A00C5201F /* mail.png */,
@@ -321,6 +340,8 @@
 				2692EC681A76402A00C5201F /* spinner.png in Resources */,
 				2692EC521A76349B00C5201F /* logo1.png in Resources */,
 				2692EC641A76402A00C5201F /* profile.png in Resources */,
+				26290E171A77912C001CA145 /* mixseafood.png in Resources */,
+				26290E161A77912C001CA145 /* food.png in Resources */,
 				2692EC601A76402A00C5201F /* mail.png in Resources */,
 				2692EC371A762CF600C5201F /* Images.xcassets in Resources */,
 			);
@@ -348,6 +369,7 @@
 				2692EC7F1A76490B00C5201F /* ProfileViewController.m in Sources */,
 				2692EC721A7646D800C5201F /* HomeViewController.m in Sources */,
 				2692EC791A7648ED00C5201F /* MenuViewController.m in Sources */,
+				26290E1B1A7792C3001CA145 /* SeaFood.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
