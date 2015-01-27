@@ -11,6 +11,7 @@
 		26290E161A77912C001CA145 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E141A77912C001CA145 /* food.png */; };
 		26290E171A77912C001CA145 /* mixseafood.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E151A77912C001CA145 /* mixseafood.png */; };
 		26290E1B1A7792C3001CA145 /* SeaFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 26290E1A1A7792C3001CA145 /* SeaFood.m */; };
+		26290E1E1A7797BF001CA145 /* FoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26290E1D1A7797BF001CA145 /* FoodTableViewCell.m */; };
 		2692EC2C1A762CF600C5201F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2B1A762CF600C5201F /* main.m */; };
 		2692EC2F1A762CF600C5201F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2E1A762CF600C5201F /* AppDelegate.m */; };
 		2692EC351A762CF600C5201F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC331A762CF600C5201F /* Main.storyboard */; };
@@ -54,6 +55,8 @@
 		26290E151A77912C001CA145 /* mixseafood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixseafood.png; sourceTree = "<group>"; };
 		26290E191A7792C3001CA145 /* SeaFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaFood.h; sourceTree = "<group>"; };
 		26290E1A1A7792C3001CA145 /* SeaFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaFood.m; sourceTree = "<group>"; };
+		26290E1C1A7797BF001CA145 /* FoodTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewCell.h; sourceTree = "<group>"; };
+		26290E1D1A7797BF001CA145 /* FoodTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewCell.m; sourceTree = "<group>"; };
 		2692EC261A762CF600C5201F /* MixSeafoodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixSeafoodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2692EC2A1A762CF600C5201F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2692EC2B1A762CF600C5201F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 			children = (
 				2692EC7A1A7648FD00C5201F /* HotViewController.h */,
 				2692EC7B1A7648FD00C5201F /* HotViewController.m */,
+				26290E1C1A7797BF001CA145 /* FoodTableViewCell.h */,
+				26290E1D1A7797BF001CA145 /* FoodTableViewCell.m */,
 			);
 			name = Hot;
 			sourceTree = "<group>";
@@ -370,6 +375,7 @@
 				2692EC721A7646D800C5201F /* HomeViewController.m in Sources */,
 				2692EC791A7648ED00C5201F /* MenuViewController.m in Sources */,
 				26290E1B1A7792C3001CA145 /* SeaFood.m in Sources */,
+				26290E1E1A7797BF001CA145 /* FoodTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

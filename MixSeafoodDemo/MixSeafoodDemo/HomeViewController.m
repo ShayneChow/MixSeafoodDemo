@@ -40,7 +40,8 @@
 }
 
 - (void)checkInToday{
-    NSLog(@"checkInToday()方法，签到页面");
+    CGFloat screenWidth = [UIScreen mainScreen].applicationFrame.size.width;
+    NSLog(@"checkInToday()方法，签到页面,并打印screenWidth：%f", screenWidth);
 }
 
 @end
