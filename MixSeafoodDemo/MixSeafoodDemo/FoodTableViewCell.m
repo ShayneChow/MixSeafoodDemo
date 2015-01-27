@@ -78,7 +78,8 @@
     // 设置主图frame
     CGFloat foodImageX = 0, foodImageY = 44 + 20;
     CGRect foodImageRect = CGRectMake(foodImageX, foodImageY, foodImageWidth, foodImageHeight);
-    _foodImage.image = [UIImage imageNamed:food.foodImage];
+    NSString *foodImage =@"mixseafood";
+    _foodImage.image = [UIImage imageNamed:foodImage];
     _foodImage.frame = foodImageRect;
     
     // 设置透明层frame
@@ -89,6 +90,7 @@
     // 设置菜单标题frame
     CGFloat foodTitleX = 0, foodTitleY = coverViewY;
     CGRect foodTitleRect = CGRectMake(foodTitleX, foodTitleY, foodTitleWidth, foodTitleHeight);
+    _foodTitle.text = @"这里是一个套餐的Title";
     _foodTitle.frame = foodTitleRect;
     
     // 设置按钮的frame
