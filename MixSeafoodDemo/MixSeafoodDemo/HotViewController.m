@@ -38,7 +38,7 @@
     [self initData];
     
     //创建一个分组样式的UITableView
-    _tableView=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    _tableView=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
     _tableView.dataSource=self;
@@ -66,10 +66,10 @@
 }
 
 #pragma mark - 数据源方法
-#pragma mark 返回分组数
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
-}
+//#pragma mark 返回分组数
+//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+//    return 1;
+//}
 
 #pragma mark 返回每组行数
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
