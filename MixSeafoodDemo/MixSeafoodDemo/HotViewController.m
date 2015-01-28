@@ -9,6 +9,7 @@
 #import "HotViewController.h"
 #import "SeaFood.h"
 #import "FoodTableViewCell.h"
+#import "FoodInfoViewController.h"
 
 #define foodImageWidth [UIScreen mainScreen].applicationFrame.size.width // 主图宽度
 #define foodImageHeight (foodImageWidth / 1.8)                 // 主图高度
@@ -108,14 +109,17 @@
 #pragma mark 选中cell时调用
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     // 0.获取选中的cell对象
-    FoodTableViewCell *cell = _foodCells[indexPath.row];
-    NSLog(@"%@", cell);
+    SeaFood *food = _food[indexPath.row];
+    NSLog(@"%@", food.foodTitle);
     
-    // 1.创建弹框
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"产品信息展示" message:@"这里是信息提示" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    FoodInfoViewController *foodInfoViewController = [[FoodInfoViewController alloc] init];
+    [self.navigationController pushViewController:foodInfoViewController animated:YES];
     
-    // 2.显示弹框
-    [alert show];
+//    // 1.创建弹框
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"产品信息展示" message:food.foodTitle delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+//    
+//    // 2.显示弹框
+//    [alert show];
 }
 
 @end

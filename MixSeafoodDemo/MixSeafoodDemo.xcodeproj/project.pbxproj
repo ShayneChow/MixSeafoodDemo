@@ -14,6 +14,7 @@
 		2615C61D1A78FFA9006B2497 /* food4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6171A78FFA9006B2497 /* food4.png */; };
 		2615C61E1A78FFA9006B2497 /* food5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6181A78FFA9006B2497 /* food5.png */; };
 		2615C61F1A78FFA9006B2497 /* food6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6191A78FFA9006B2497 /* food6.png */; };
+		2615C6231A79144B006B2497 /* FoodInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2615C6221A79144B006B2497 /* FoodInfoViewController.m */; };
 		26290E131A773AE4001CA145 /* TabBar-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E121A773AE4001CA145 /* TabBar-BG.png */; };
 		26290E161A77912C001CA145 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E141A77912C001CA145 /* food.png */; };
 		26290E171A77912C001CA145 /* mixseafood.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E151A77912C001CA145 /* mixseafood.png */; };
@@ -64,6 +65,8 @@
 		2615C6171A78FFA9006B2497 /* food4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food4.png; sourceTree = "<group>"; };
 		2615C6181A78FFA9006B2497 /* food5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food5.png; sourceTree = "<group>"; };
 		2615C6191A78FFA9006B2497 /* food6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food6.png; sourceTree = "<group>"; };
+		2615C6211A79144B006B2497 /* FoodInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodInfoViewController.h; sourceTree = "<group>"; };
+		2615C6221A79144B006B2497 /* FoodInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodInfoViewController.m; sourceTree = "<group>"; };
 		26290E121A773AE4001CA145 /* TabBar-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar-BG.png"; sourceTree = "<group>"; };
 		26290E141A77912C001CA145 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		26290E151A77912C001CA145 /* mixseafood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixseafood.png; sourceTree = "<group>"; };
@@ -140,6 +143,15 @@
 			name = imageTest;
 			sourceTree = "<group>";
 		};
+		2615C6201A7913DA006B2497 /* FoodInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2615C6211A79144B006B2497 /* FoodInfoViewController.h */,
+				2615C6221A79144B006B2497 /* FoodInfoViewController.m */,
+			);
+			name = FoodInfo;
+			sourceTree = "<group>";
+		};
 		26290E181A77928A001CA145 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +193,7 @@
 				2692EC741A76470800C5201F /* Menu */,
 				2692EC751A76477700C5201F /* Hot */,
 				2692EC761A76478E00C5201F /* Profile */,
+				2615C6201A7913DA006B2497 /* FoodInfo */,
 				2692EC331A762CF600C5201F /* Main.storyboard */,
 				2692EC361A762CF600C5201F /* Images.xcassets */,
 				2692EC381A762CF600C5201F /* LaunchScreen.xib */,
@@ -402,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2615C6231A79144B006B2497 /* FoodInfoViewController.m in Sources */,
 				2692EC7C1A7648FD00C5201F /* HotViewController.m in Sources */,
 				2692EC6F1A7642E900C5201F /* MainTabBarViewController.m in Sources */,
 				2692EC2F1A762CF600C5201F /* AppDelegate.m in Sources */,
