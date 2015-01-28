@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2615C6121A78BF83006B2497 /* SeaFoodTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6111A78BF83006B2497 /* SeaFoodTest.plist */; };
+		2615C61A1A78FFA9006B2497 /* food1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6141A78FFA9006B2497 /* food1.png */; };
+		2615C61B1A78FFA9006B2497 /* food2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6151A78FFA9006B2497 /* food2.png */; };
+		2615C61C1A78FFA9006B2497 /* food3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6161A78FFA9006B2497 /* food3.png */; };
+		2615C61D1A78FFA9006B2497 /* food4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6171A78FFA9006B2497 /* food4.png */; };
+		2615C61E1A78FFA9006B2497 /* food5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6181A78FFA9006B2497 /* food5.png */; };
+		2615C61F1A78FFA9006B2497 /* food6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6191A78FFA9006B2497 /* food6.png */; };
 		26290E131A773AE4001CA145 /* TabBar-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E121A773AE4001CA145 /* TabBar-BG.png */; };
 		26290E161A77912C001CA145 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E141A77912C001CA145 /* food.png */; };
 		26290E171A77912C001CA145 /* mixseafood.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E151A77912C001CA145 /* mixseafood.png */; };
@@ -52,6 +58,12 @@
 
 /* Begin PBXFileReference section */
 		2615C6111A78BF83006B2497 /* SeaFoodTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SeaFoodTest.plist; sourceTree = "<group>"; };
+		2615C6141A78FFA9006B2497 /* food1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food1.png; sourceTree = "<group>"; };
+		2615C6151A78FFA9006B2497 /* food2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food2.png; sourceTree = "<group>"; };
+		2615C6161A78FFA9006B2497 /* food3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food3.png; sourceTree = "<group>"; };
+		2615C6171A78FFA9006B2497 /* food4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food4.png; sourceTree = "<group>"; };
+		2615C6181A78FFA9006B2497 /* food5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food5.png; sourceTree = "<group>"; };
+		2615C6191A78FFA9006B2497 /* food6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food6.png; sourceTree = "<group>"; };
 		26290E121A773AE4001CA145 /* TabBar-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar-BG.png"; sourceTree = "<group>"; };
 		26290E141A77912C001CA145 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		26290E151A77912C001CA145 /* mixseafood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixseafood.png; sourceTree = "<group>"; };
@@ -115,6 +127,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2615C6131A78FF8E006B2497 /* imageTest */ = {
+			isa = PBXGroup;
+			children = (
+				2615C6141A78FFA9006B2497 /* food1.png */,
+				2615C6151A78FFA9006B2497 /* food2.png */,
+				2615C6161A78FFA9006B2497 /* food3.png */,
+				2615C6171A78FFA9006B2497 /* food4.png */,
+				2615C6181A78FFA9006B2497 /* food5.png */,
+				2615C6191A78FFA9006B2497 /* food6.png */,
+			);
+			name = imageTest;
+			sourceTree = "<group>";
+		};
 		26290E181A77928A001CA145 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +220,7 @@
 		2692EC4F1A76346F00C5201F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2615C6131A78FF8E006B2497 /* imageTest */,
 				26290E141A77912C001CA145 /* food.png */,
 				26290E151A77912C001CA145 /* mixseafood.png */,
 				26290E121A773AE4001CA145 /* TabBar-BG.png */,
@@ -333,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2615C61D1A78FFA9006B2497 /* food4.png in Resources */,
 				2692EC611A76402A00C5201F /* home.png in Resources */,
 				2692EC5F1A76402A00C5201F /* edit.png in Resources */,
 				2692EC651A76402A00C5201F /* save.png in Resources */,
@@ -341,6 +368,8 @@
 				2692EC351A762CF600C5201F /* Main.storyboard in Resources */,
 				2692EC631A76402A00C5201F /* pinpoint.png in Resources */,
 				2692EC531A76349B00C5201F /* icon.png in Resources */,
+				2615C61C1A78FFA9006B2497 /* food3.png in Resources */,
+				2615C61E1A78FFA9006B2497 /* food5.png in Resources */,
 				2692EC3A1A762CF600C5201F /* LaunchScreen.xib in Resources */,
 				2692EC621A76402A00C5201F /* light.png in Resources */,
 				2692EC661A76402A00C5201F /* settings 1.png in Resources */,
@@ -348,8 +377,11 @@
 				2615C6121A78BF83006B2497 /* SeaFoodTest.plist in Resources */,
 				2692EC681A76402A00C5201F /* spinner.png in Resources */,
 				2692EC521A76349B00C5201F /* logo1.png in Resources */,
+				2615C61A1A78FFA9006B2497 /* food1.png in Resources */,
+				2615C61B1A78FFA9006B2497 /* food2.png in Resources */,
 				2692EC641A76402A00C5201F /* profile.png in Resources */,
 				26290E171A77912C001CA145 /* mixseafood.png in Resources */,
+				2615C61F1A78FFA9006B2497 /* food6.png in Resources */,
 				26290E161A77912C001CA145 /* food.png in Resources */,
 				2692EC601A76402A00C5201F /* mail.png in Resources */,
 				2692EC371A762CF600C5201F /* Images.xcassets in Resources */,

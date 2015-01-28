@@ -16,7 +16,7 @@
 @interface HotViewController ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>{
     UITableView *_tableView;
     NSMutableArray *_food;
-    NSMutableArray *_foodCells;//存储cell，用于计算高度
+    NSMutableArray *_foodCells;//存储cell
 }
 
 @end
@@ -78,6 +78,7 @@
 
 #pragma mark返回每行的单元格
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"cellForRow --- %d", indexPath.row);
     static NSString *cellIdentifier=@"UITableViewCellIdentifierKey1";
     FoodTableViewCell *cell;
     cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -99,9 +100,22 @@
     return foodImageHeight;
 }
 
-#pragma mark 重写状态样式方法
--(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+//#pragma mark 重写状态样式方法
+//-(UIStatusBarStyle)preferredStatusBarStyle{
+//    return UIStatusBarStyleLightContent;
+//}
+
+#pragma mark 选中cell时调用
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    // 0.获取选中的cell对象
+    FoodTableViewCell *cell = _foodCells[indexPath.row];
+    NSLog(@"%@", cell);
+    
+    // 1.创建弹框
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"产品信息展示" message:@"这里是信息提示" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    
+    // 2.显示弹框
+    [alert show];
 }
 
 @end

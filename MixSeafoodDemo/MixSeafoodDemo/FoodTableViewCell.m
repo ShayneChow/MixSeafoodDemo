@@ -114,10 +114,20 @@
 #pragma mark 收藏和分享按钮实现
 - (void)likeBtnPressed{
     NSLog(@"收藏这个美食");
+    // 1.创建弹框
+    UIAlertView *alertLike = [[UIAlertView alloc] initWithTitle:@"收藏" message:@"敬请期待……" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    
+    // 2.显示弹框
+    [alertLike show];
 }
 
 - (void)shareBtnPressed{
     NSLog(@"分享这个美食到微博/朋友圈");
+    // 1.创建弹框
+    UIAlertView *alertShare = [[UIAlertView alloc] initWithTitle:@"分享到微博/朋友圈" message:@"敬请期待……" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    
+    // 2.显示弹框
+    [alertShare show];
 }
 
 #pragma mark 重写选择事件，取消选中

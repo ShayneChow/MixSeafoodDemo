@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>image</key>
-		<string>mixseafood</string>
+		<string>food1</string>
 		<key>title</key>
 		<string>超级帝王蟹</string>
 		<key>price</key>
@@ -14,7 +14,7 @@
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>mixseafood</string>
+		<string>food2</string>
 		<key>title</key>
 		<string>澳洲大龙虾</string>
 		<key>price</key>
@@ -24,7 +24,7 @@
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>mixseafood</string>
+		<string>food3</string>
 		<key>title</key>
 		<string>波士顿蓝龙虾</string>
 		<key>price</key>
@@ -34,7 +34,7 @@
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>mixseafood</string>
+		<string>food4</string>
 		<key>title</key>
 		<string>提拉米苏</string>
 		<key>price</key>
@@ -44,7 +44,7 @@
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>mixseafood</string>
+		<string>food5</string>
 		<key>title</key>
 		<string>拉菲1916</string>
 		<key>price</key>
@@ -54,7 +54,7 @@
 	</dict>
 	<dict>
 		<key>image</key>
-		<string>mixseafood</string>
+		<string>food6</string>
 		<key>title</key>
 		<string>海鲜炒饭</string>
 		<key>price</key>
