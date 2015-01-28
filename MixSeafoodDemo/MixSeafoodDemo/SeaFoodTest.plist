@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>mixseafood</string>
+		<key>title</key>
+		<string>超级帝王蟹</string>
+		<key>price</key>
+		<integer>250</integer>
+		<key>info</key>
+		<string>超级帝王蟹的介绍呢</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>mixseafood</string>
+		<key>title</key>
+		<string>澳洲大龙虾</string>
+		<key>price</key>
+		<integer>360</integer>
+		<key>info</key>
+		<string>大龙虾介绍</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>mixseafood</string>
+		<key>title</key>
+		<string>波士顿蓝龙虾</string>
+		<key>price</key>
+		<integer>1800</integer>
+		<key>info</key>
+		<string>蓝龙虾真的牛逼么</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>mixseafood</string>
+		<key>title</key>
+		<string>提拉米苏</string>
+		<key>price</key>
+		<integer>39</integer>
+		<key>info</key>
+		<string>一个餐后甜品</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>mixseafood</string>
+		<key>title</key>
+		<string>拉菲1916</string>
+		<key>price</key>
+		<integer>2650</integer>
+		<key>info</key>
+		<string>山寨红酒</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>mixseafood</string>
+		<key>title</key>
+		<string>海鲜炒饭</string>
+		<key>price</key>
+		<integer>46</integer>
+		<key>info</key>
+		<string>不错的炒饭</string>
+	</dict>
+</array>
+</plist>

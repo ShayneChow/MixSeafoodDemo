@@ -10,4 +10,19 @@
 
 @implementation SeaFood
 
+- (id)initWithDictionary:(NSDictionary *)dic{
+    if (self = [super init]) {
+        self.foodImage = dic[@"image"];
+        self.foodTitle = dic[@"title"];
+        self.foodPrice = dic[@"price"];
+        self.foodInfo  = dic[@"info"];
+    }
+    return self;
+}
+
++ (id)seafoodWithDictionary:(NSDictionary *)dic{
+    SeaFood *food = [[SeaFood alloc] initWithDictionary:dic];
+    return food;
+}
+
 @end

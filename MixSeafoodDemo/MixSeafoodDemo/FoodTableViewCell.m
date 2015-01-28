@@ -10,13 +10,14 @@
 #import "SeaFood.h"
 
 #define foodImageWidth [UIScreen mainScreen].applicationFrame.size.width // 主图宽度
-#define foodImageHeight (foodImageWidth / 1.5)                 // 主图高度
-#define coverViewHeight 36
+#define foodImageHeight (foodImageWidth / 1.8)                 // 主图高度
+#define coverViewHeight 36.0
 #define coverViewWidth foodImageWidth
-#define foodTitleWidth (coverViewWidth - buttonWidth*2)    // title的宽度 = cover的宽度 - 2个button的宽度
-#define foodTitleHeight coverViewHeight
 #define buttonHeight coverViewHeight
 #define buttonWidth buttonHeight
+#define foodTitleWidth (coverViewWidth - buttonWidth*2 - 10.0)    // title的宽度 = cover的宽度 - 2个button的宽度
+#define foodTitleHeight coverViewHeight
+
 
 @interface FoodTableViewCell(){
     UIImageView *_foodImage;    // 主图
@@ -30,9 +31,12 @@
 
 @implementation FoodTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
-    [self initSubView];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self initSubView];
+    }
+    return self;
 }
 
 /*
@@ -55,7 +59,7 @@
     // 初始化半透明层
     _coverView = [[UIView alloc] init];
     _coverView.backgroundColor = [UIColor blackColor];
-    _coverView.alpha = 0.5;
+    _coverView.alpha = 0.7;
     [self addSubview:_coverView];
     
     // 初始化菜单标题
@@ -71,41 +75,40 @@
     // 初始化分享按钮
     _shareBtn = [[UIButton alloc] init];
     [self addSubview:_shareBtn];
+    
 }
 
 #pragma mark 设置菜单大小位置
 - (void)setFood:(SeaFood *)food{
     // 设置主图frame
-    CGFloat foodImageX = 0, foodImageY = 44 + 20;
+    CGFloat foodImageX = 0, foodImageY = 0;
     CGRect foodImageRect = CGRectMake(foodImageX, foodImageY, foodImageWidth, foodImageHeight);
-    NSString *foodImage =@"mixseafood";
-    _foodImage.image = [UIImage imageNamed:foodImage];
+    _foodImage.image = [UIImage imageNamed:food.foodImage];
     _foodImage.frame = foodImageRect;
     
     // 设置透明层frame
-    CGFloat coverViewX = 0, coverViewY = foodImageHeight + 44 + 20 - coverViewHeight;
+    CGFloat coverViewX = 0, coverViewY = foodImageHeight - coverViewHeight;
     CGRect coverViewRect = CGRectMake(coverViewX, coverViewY, coverViewWidth, coverViewHeight);
     _coverView.frame = coverViewRect;
     
     // 设置菜单标题frame
-    CGFloat foodTitleX = 0, foodTitleY = coverViewY;
+    CGFloat foodTitleX = 10.0, foodTitleY = coverViewY;
     CGRect foodTitleRect = CGRectMake(foodTitleX, foodTitleY, foodTitleWidth, foodTitleHeight);
-    _foodTitle.text = @"这里是一个套餐的Title";
+    _foodTitle.text = food.foodTitle;
     _foodTitle.frame = foodTitleRect;
     
     // 设置按钮的frame
-    CGFloat likeBtnX = foodTitleWidth, likeBtnY = coverViewY;
+    CGFloat likeBtnX = foodTitleWidth + 10.0, likeBtnY = coverViewY;
     CGRect likeBtnRect = CGRectMake(likeBtnX, likeBtnY, buttonWidth, buttonHeight);
     [_likeBtn setBackgroundImage:[UIImage imageNamed:@"save"] forState:UIControlStateNormal];
     [_likeBtn addTarget:self action:@selector(likeBtnPressed) forControlEvents:UIControlEventTouchUpInside];
     _likeBtn.frame = likeBtnRect;
     
-    CGFloat shareBtnX = foodTitleWidth + likeBtnX, shareBtnY = coverViewY;
+    CGFloat shareBtnX = buttonWidth + likeBtnX, shareBtnY = coverViewY;
     CGRect shareBtnRect = CGRectMake(shareBtnX, shareBtnY, buttonWidth, buttonHeight);
     [_shareBtn setBackgroundImage:[UIImage imageNamed:@"share"] forState:UIControlStateNormal];
     [_shareBtn addTarget:self action:@selector(shareBtnPressed) forControlEvents:UIControlEventTouchUpInside];
     _shareBtn.frame = shareBtnRect;
-
 }
 
 #pragma mark 收藏和分享按钮实现

@@ -10,6 +10,9 @@
 #import "SeaFood.h"
 #import "FoodTableViewCell.h"
 
+#define foodImageWidth [UIScreen mainScreen].applicationFrame.size.width // 主图宽度
+#define foodImageHeight (foodImageWidth / 1.8)                 // 主图高度
+
 @interface HotViewController ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>{
     UITableView *_tableView;
     NSMutableArray *_food;
@@ -35,13 +38,13 @@
     [self initData];
     
     //创建一个分组样式的UITableView
-//    _tableView=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    _tableView=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
     _tableView.dataSource=self;
     //设置代理
     _tableView.delegate=self;
-    
+    NSLog(@"cell");
     [self.view addSubview:_tableView];
 }
 
@@ -51,10 +54,15 @@
 }
 
 - (void)initData{
+    NSString *path=[[NSBundle mainBundle] pathForResource:@"SeaFoodTest" ofType:@"plist"];
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
     _food = [[NSMutableArray alloc]init];
     _foodCells = [[NSMutableArray alloc]init];
-    FoodTableViewCell *cell = [[FoodTableViewCell alloc] init];
-    [_foodCells addObject:cell];
+    [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [_food addObject:[SeaFood seafoodWithDictionary:obj]];
+        FoodTableViewCell *cell = [[FoodTableViewCell alloc] init];
+        [_foodCells addObject:cell];
+    }];
 }
 
 #pragma mark - 数据源方法
@@ -65,7 +73,6 @@
 
 #pragma mark 返回每组行数
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
     return _food.count;
 }
 
@@ -87,9 +94,9 @@
 #pragma mark - 代理方法
 #pragma mark 重新设置单元格高度
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    FoodTableViewCell *cell = _foodCells[indexPath.row];
-    cell.food = _food[indexPath.row];
-    return cell.height;
+//    FoodTableViewCell *cell = _foodCells[indexPath.row];
+//    cell.food = _food[indexPath.row];
+    return foodImageHeight;
 }
 
 #pragma mark 重写状态样式方法
