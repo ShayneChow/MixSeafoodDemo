@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class SeaFood;
+
 @interface FoodInfoViewController : UIViewController
+
+#pragma mark 菜单对象
+@property (nonatomic,strong) SeaFood *food;
 
 @end
