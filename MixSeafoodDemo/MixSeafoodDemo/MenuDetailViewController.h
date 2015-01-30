@@ -10,4 +10,7 @@
 
 @interface MenuDetailViewController : UIViewController
 
+@property (nonatomic, retain) NSURL *detailURL;
+@property (nonatomic, retain) UIWebView *detailWebView;
+
 @end

@@ -8,15 +8,47 @@
 
 #import "MenuDetailViewController.h"
 
+#define webViewWidth [UIScreen mainScreen].bounds.size.width // 获取屏幕宽度
+#define webViewHeight [UIScreen mainScreen].bounds.size.height// 定义WebView的高度
+
 @interface MenuDetailViewController ()
 
 @end
 
 @implementation MenuDetailViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = @"详情";
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"分享 " style:UIBarButtonItemStylePlain target:self action:@selector(shareBtnPressed)];
+    
+    [self initSubView];
+    [self setSubView];
+    [_detailWebView loadRequest:[NSURLRequest requestWithURL:_detailURL]];
+}
+
+#pragma mark 初始化视图
+- (void)initSubView{
+    // 初始化UIWebView
+    _detailWebView = [[UIWebView alloc] init];
+    [self.view addSubview:_detailWebView];
+}
+
+#pragma mark 设置视图frame
+- (void)setSubView{
+    // 设置UIWebView的frame
+    CGFloat webViewX = 0, webViewY = 0;
+    CGRect webViewRect = CGRectMake(webViewX, webViewY, webViewWidth, webViewHeight);
+    _detailWebView.frame = webViewRect;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +56,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)shareBtnPressed{
+    NSLog(@"分享这个美食到微博/朋友圈");
+    // 1.创建弹框
+    UIAlertView *alertShare = [[UIAlertView alloc] initWithTitle:@"分享到微博/朋友圈" message:@"敬请期待……" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    
+    // 2.显示弹框
+    [alertShare show];
 }
-*/
 
 @end

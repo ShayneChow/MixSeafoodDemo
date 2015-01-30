@@ -9,7 +9,7 @@
 #import "HotViewController.h"
 #import "SeaFood.h"
 #import "FoodTableViewCell.h"
-#import "FoodInfoViewController.h"
+#import "MenuDetailViewController.h"
 
 #define foodImageWidth [UIScreen mainScreen].applicationFrame.size.width // 主图宽度
 #define foodImageHeight (foodImageWidth / 1.8)                 // 主图高度
@@ -101,19 +101,16 @@
     return foodImageHeight;
 }
 
-//#pragma mark 重写状态样式方法
-//-(UIStatusBarStyle)preferredStatusBarStyle{
-//    return UIStatusBarStyleLightContent;
-//}
-
 #pragma mark 选中cell时调用
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     // 0.获取选中的cell对象
     SeaFood *food = _food[indexPath.row];
     NSLog(@"%@", food.foodTitle);
     
-    FoodInfoViewController *foodInfoViewController = [[FoodInfoViewController alloc] init];
-    [self.navigationController pushViewController:foodInfoViewController animated:YES];
+    MenuDetailViewController *menuDetailViewController = [[MenuDetailViewController alloc] init];
+    
+    menuDetailViewController.detailURL = [[NSURL alloc] initWithString:@"http://shaynechow.github.io/iOS-URLRequest/"];
+    [self.navigationController pushViewController:menuDetailViewController animated:YES];
 }
 
 @end
