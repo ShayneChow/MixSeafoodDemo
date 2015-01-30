@@ -20,12 +20,12 @@
 #define foodTitleHeight coverViewHeight
 
 @interface FoodInfoViewController (){
-    UIImageView *_foodImage;    // 主图
-    UILabel     *_foodTitle;    // 标题
-    UILabel     *_foodPrice;    // 价格
-    UIButton    *_likeBtn;      // 收藏按钮
-    UIButton    *_shareBtn;     // 分享按钮
-    UITextField *_foodInfo;     // 详情介绍
+    UIImageView *_foodDetailImage;    // 主图
+    UILabel     *_foodDetailTitle;    // 标题
+    UILabel     *_foodDetailPrice;    // 价格
+    UIButton    *_likeDetailBtn;      // 收藏按钮
+    UIButton    *_shareDetailBtn;     // 分享按钮
+    UIWebView   *_foodDetailInfo;     // 详情介绍
 }
 
 @end
@@ -51,32 +51,31 @@
 #pragma mark 初始化视图
 -(void)initSubView{
     // 初始化主图控件
-    _foodImage = [[UIImageView alloc] init];
-    [self.view addSubview:_foodImage];
+    _foodDetailImage = [[UIImageView alloc] init];
+    [self.view addSubview:_foodDetailImage];
     
     // 初始化菜单标题
-    _foodTitle = [[UILabel alloc] init];
-    _foodTitle.font = [UIFont systemFontOfSize:18];
-    [self.view addSubview:_foodTitle];
+    _foodDetailTitle = [[UILabel alloc] init];
+    _foodDetailTitle.font = [UIFont systemFontOfSize:18];
+    [self.view addSubview:_foodDetailTitle];
     
     // 初始化价格
-    _foodPrice = [[UILabel alloc] init];
-    _foodPrice.textColor = [UIColor redColor];
-    _foodPrice.font = [UIFont systemFontOfSize:16];
-    [self.view addSubview:_foodPrice];
+    _foodDetailPrice = [[UILabel alloc] init];
+    _foodDetailPrice.textColor = [UIColor redColor];
+    _foodDetailPrice.font = [UIFont systemFontOfSize:16];
+    [self.view addSubview:_foodDetailPrice];
     
     // 初始化收藏按钮
-    _likeBtn = [[UIButton alloc] init];
-    [self.view addSubview:_likeBtn];
+    _likeDetailBtn = [[UIButton alloc] init];
+    [self.view addSubview:_likeDetailBtn];
     
     // 初始化分享按钮
-    _shareBtn = [[UIButton alloc] init];
-    [self.view addSubview:_shareBtn];
+    _shareDetailBtn = [[UIButton alloc] init];
+    [self.view addSubview:_shareDetailBtn];
     
     // 初始化详情介绍
-    _foodInfo = [[UITextField alloc] init];
-    _foodInfo.font = [UIFont systemFontOfSize:14];
-    [self.view addSubview:_foodInfo];
+    _foodDetailInfo = [[UIWebView alloc] init];
+    [self.view addSubview:_foodDetailInfo];
     
     NSLog(@"初始化详情页视图");
 }
@@ -86,29 +85,29 @@
     // 设置主图frame
     CGFloat foodImageX = 0, foodImageY = 44 + 20;
     CGRect foodImageRect = CGRectMake(foodImageX, foodImageY, foodImageWidth, foodImageHeight);
-    _foodImage.image = [UIImage imageNamed:@"mixseafood"];
-    _foodImage.frame = foodImageRect;
+    _foodDetailImage.image = [UIImage imageNamed:@"mixseafood"];
+    _foodDetailImage.frame = foodImageRect;
     
     // 设置菜单标题frame
     CGFloat foodTitleX = 10.0, foodTitleY = foodImageHeight - coverViewHeight;
     CGRect foodTitleRect = CGRectMake(foodTitleX, foodTitleY, foodTitleWidth, foodTitleHeight);
-    _foodTitle.text = @"测试数据";
-    _foodTitle.frame = foodTitleRect;
+    _foodDetailTitle.text = @"测试数据";
+    _foodDetailTitle.frame = foodTitleRect;
     
     // 设置价格frame
     
     // 设置按钮的frame
     CGFloat likeBtnX = foodTitleWidth + 10.0, likeBtnY = foodTitleY;
     CGRect likeBtnRect = CGRectMake(likeBtnX, likeBtnY, buttonWidth, buttonHeight);
-    [_likeBtn setBackgroundImage:[UIImage imageNamed:@"save"] forState:UIControlStateNormal];
-    [_likeBtn addTarget:self action:@selector(likeBtnPressed) forControlEvents:UIControlEventTouchUpInside];
-    _likeBtn.frame = likeBtnRect;
+    [_likeDetailBtn setBackgroundImage:[UIImage imageNamed:@"save"] forState:UIControlStateNormal];
+    [_likeDetailBtn addTarget:self action:@selector(likeBtnPressed) forControlEvents:UIControlEventTouchUpInside];
+    _likeDetailBtn.frame = likeBtnRect;
     
     CGFloat shareBtnX = buttonWidth + likeBtnX, shareBtnY = foodTitleY;
     CGRect shareBtnRect = CGRectMake(shareBtnX, shareBtnY, buttonWidth, buttonHeight);
-    [_shareBtn setBackgroundImage:[UIImage imageNamed:@"share"] forState:UIControlStateNormal];
-    [_shareBtn addTarget:self action:@selector(shareBtnPressed) forControlEvents:UIControlEventTouchUpInside];
-    _shareBtn.frame = shareBtnRect;
+    [_shareDetailBtn setBackgroundImage:[UIImage imageNamed:@"share"] forState:UIControlStateNormal];
+    [_shareDetailBtn addTarget:self action:@selector(shareBtnPressed) forControlEvents:UIControlEventTouchUpInside];
+    _shareDetailBtn.frame = shareBtnRect;
     
     // 设置介绍frame
     

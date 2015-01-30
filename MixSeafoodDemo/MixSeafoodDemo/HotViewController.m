@@ -114,12 +114,6 @@
     
     FoodInfoViewController *foodInfoViewController = [[FoodInfoViewController alloc] init];
     [self.navigationController pushViewController:foodInfoViewController animated:YES];
-    
-//    // 1.创建弹框
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"产品信息展示" message:food.foodTitle delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
-//    
-//    // 2.显示弹框
-//    [alert show];
 }
 
 @end
