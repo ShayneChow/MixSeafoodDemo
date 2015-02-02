@@ -109,7 +109,7 @@
     
     MenuDetailViewController *menuDetailViewController = [[MenuDetailViewController alloc] init];
     
-    menuDetailViewController.detailURL = [[NSURL alloc] initWithString:@"http://shaynechow.github.io/iOS-URLRequest/"];
+    menuDetailViewController.detailURL = [[NSURL alloc] initWithString:food.detailURL];
     [self.navigationController pushViewController:menuDetailViewController animated:YES];
 }
 

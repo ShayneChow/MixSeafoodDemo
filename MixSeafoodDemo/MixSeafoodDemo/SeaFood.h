@@ -15,6 +15,8 @@
 @property (nonatomic, assign) NSNumber *foodPrice;  // 菜单价格
 @property (nonatomic, copy) NSString *foodTitle;  // 菜单标题
 @property (nonatomic, copy) NSString *foodInfo;   // 菜单介绍
+@property (nonatomic, copy) NSString *detailURL;   // 菜单消息介绍页面web链接
+@property (nonatomic, copy) NSString *foodNO;   // 菜品编号
 
 #pragma mark - 静态方法（类方法）初始化菜单对象
 - (id)initWithDictionary:(NSDictionary *)dic;

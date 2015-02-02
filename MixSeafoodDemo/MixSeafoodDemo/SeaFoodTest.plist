@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>no</key>
+		<string>MS10010</string>
 		<key>image</key>
 		<string>food1</string>
 		<key>title</key>
@@ -11,8 +13,12 @@
 		<integer>250</integer>
 		<key>info</key>
 		<string>超级帝王蟹的介绍呢</string>
+		<key>url</key>
+		<string>http://www.hao123.com/</string>
 	</dict>
 	<dict>
+		<key>no</key>
+		<string>MS10011</string>
 		<key>image</key>
 		<string>food2</string>
 		<key>title</key>
@@ -21,8 +27,12 @@
 		<integer>360</integer>
 		<key>info</key>
 		<string>大龙虾介绍</string>
+		<key>url</key>
+		<string>http://www.baidu.com/</string>
 	</dict>
 	<dict>
+		<key>no</key>
+		<string>MS10012</string>
 		<key>image</key>
 		<string>food3</string>
 		<key>title</key>
@@ -31,8 +41,12 @@
 		<integer>1800</integer>
 		<key>info</key>
 		<string>蓝龙虾真的牛逼么</string>
+		<key>url</key>
+		<string>http://www.zhihu.com/</string>
 	</dict>
 	<dict>
+		<key>no</key>
+		<string>MS10013</string>
 		<key>image</key>
 		<string>food4</string>
 		<key>title</key>
@@ -41,8 +55,12 @@
 		<integer>39</integer>
 		<key>info</key>
 		<string>一个餐后甜品</string>
+		<key>url</key>
+		<string>http://www.cocoachina.com/ios/</string>
 	</dict>
 	<dict>
+		<key>no</key>
+		<string>MS10014</string>
 		<key>image</key>
 		<string>food5</string>
 		<key>title</key>
@@ -51,8 +69,12 @@
 		<integer>2650</integer>
 		<key>info</key>
 		<string>山寨红酒</string>
+		<key>url</key>
+		<string>http://shaynechow.github.io/</string>
 	</dict>
 	<dict>
+		<key>no</key>
+		<string>MS10015</string>
 		<key>image</key>
 		<string>food6</string>
 		<key>title</key>
@@ -61,6 +83,8 @@
 		<integer>46</integer>
 		<key>info</key>
 		<string>不错的炒饭</string>
+		<key>url</key>
+		<string>http://weibo.com/206272757</string>
 	</dict>
 </array>
 </plist>

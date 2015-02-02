@@ -16,6 +16,8 @@
         self.foodTitle = dic[@"title"];
         self.foodPrice = dic[@"price"];
         self.foodInfo  = dic[@"info"];
+        self.detailURL = dic[@"url"];
+        self.foodNO    = dic[@"no"];
     }
     return self;
 }
