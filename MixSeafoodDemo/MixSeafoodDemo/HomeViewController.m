@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "FancyViewController.h"
 
 @interface HomeViewController ()
 
@@ -37,11 +38,17 @@
 
 - (void)navigationTo{
     NSLog(@"navigationTo()方法，打开导航页面");
+    
+    FancyViewController * fvc = [FancyViewController new];
+    [self.navigationController pushViewController:fvc animated:YES];
 }
 
 - (void)checkInToday{
     CGFloat screenWidth = [UIScreen mainScreen].applicationFrame.size.width;
     NSLog(@"checkInToday()方法，签到页面,并打印screenWidth：%f", screenWidth);
+    
+    FancyViewController * fvc = [FancyViewController new];
+    [self.navigationController pushViewController:fvc animated:YES];
 }
 
 @end

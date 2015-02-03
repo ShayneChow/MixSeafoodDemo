@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26021F0F1A80EC940096E302 /* home1.png in Resources */ = {isa = PBXBuildFile; fileRef = 26021F0D1A80EC940096E302 /* home1.png */; };
+		26021F111A80ED580096E302 /* home3.png in Resources */ = {isa = PBXBuildFile; fileRef = 26021F101A80ED580096E302 /* home3.png */; };
+		26021F181A80EDA40096E302 /* M6HeaderInsetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021F141A80EDA40096E302 /* M6HeaderInsetTableView.m */; };
+		26021F191A80EDA40096E302 /* M6UniversalParallaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021F161A80EDA40096E302 /* M6UniversalParallaxViewController.m */; };
+		26021F1A1A80EDA40096E302 /* M6UniversalParallaxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26021F171A80EDA40096E302 /* M6UniversalParallaxViewController.xib */; };
+		26021F211A80EDBB0096E302 /* FancyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021F1C1A80EDBB0096E302 /* FancyViewController.m */; };
+		26021F221A80EDBB0096E302 /* FancyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26021F1D1A80EDBB0096E302 /* FancyViewController.xib */; };
+		26021F231A80EDBB0096E302 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021F201A80EDBB0096E302 /* UIImage+ImageEffects.m */; };
 		2615C6121A78BF83006B2497 /* SeaFoodTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6111A78BF83006B2497 /* SeaFoodTest.plist */; };
 		2615C61A1A78FFA9006B2497 /* food1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6141A78FFA9006B2497 /* food1.png */; };
 		2615C61B1A78FFA9006B2497 /* food2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6151A78FFA9006B2497 /* food2.png */; };
@@ -16,8 +24,7 @@
 		2615C61F1A78FFA9006B2497 /* food6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2615C6191A78FFA9006B2497 /* food6.png */; };
 		26220C001A7B901100FA2F25 /* MenuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26220BFF1A7B901100FA2F25 /* MenuDetailViewController.m */; };
 		26290E131A773AE4001CA145 /* TabBar-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E121A773AE4001CA145 /* TabBar-BG.png */; };
-		26290E161A77912C001CA145 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E141A77912C001CA145 /* food.png */; };
-		26290E171A77912C001CA145 /* mixseafood.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E151A77912C001CA145 /* mixseafood.png */; };
+		26290E171A77912C001CA145 /* home2.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E151A77912C001CA145 /* home2.png */; };
 		26290E1B1A7792C3001CA145 /* SeaFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 26290E1A1A7792C3001CA145 /* SeaFood.m */; };
 		26290E1E1A7797BF001CA145 /* FoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26290E1D1A7797BF001CA145 /* FoodTableViewCell.m */; };
 		2692EC2C1A762CF600C5201F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2B1A762CF600C5201F /* main.m */; };
@@ -58,6 +65,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26021F0D1A80EC940096E302 /* home1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home1.png; sourceTree = "<group>"; };
+		26021F101A80ED580096E302 /* home3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home3.png; sourceTree = "<group>"; };
+		26021F131A80EDA40096E302 /* M6HeaderInsetTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M6HeaderInsetTableView.h; sourceTree = "<group>"; };
+		26021F141A80EDA40096E302 /* M6HeaderInsetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M6HeaderInsetTableView.m; sourceTree = "<group>"; };
+		26021F151A80EDA40096E302 /* M6UniversalParallaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M6UniversalParallaxViewController.h; sourceTree = "<group>"; };
+		26021F161A80EDA40096E302 /* M6UniversalParallaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M6UniversalParallaxViewController.m; sourceTree = "<group>"; };
+		26021F171A80EDA40096E302 /* M6UniversalParallaxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = M6UniversalParallaxViewController.xib; sourceTree = "<group>"; };
+		26021F1B1A80EDBB0096E302 /* FancyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FancyViewController.h; sourceTree = "<group>"; };
+		26021F1C1A80EDBB0096E302 /* FancyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FancyViewController.m; sourceTree = "<group>"; };
+		26021F1D1A80EDBB0096E302 /* FancyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FancyViewController.xib; sourceTree = "<group>"; };
+		26021F1F1A80EDBB0096E302 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		26021F201A80EDBB0096E302 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		2615C6111A78BF83006B2497 /* SeaFoodTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SeaFoodTest.plist; sourceTree = "<group>"; };
 		2615C6141A78FFA9006B2497 /* food1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food1.png; sourceTree = "<group>"; };
 		2615C6151A78FFA9006B2497 /* food2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food2.png; sourceTree = "<group>"; };
@@ -68,8 +87,7 @@
 		26220BFE1A7B901100FA2F25 /* MenuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuDetailViewController.h; sourceTree = "<group>"; };
 		26220BFF1A7B901100FA2F25 /* MenuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuDetailViewController.m; sourceTree = "<group>"; };
 		26290E121A773AE4001CA145 /* TabBar-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar-BG.png"; sourceTree = "<group>"; };
-		26290E141A77912C001CA145 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
-		26290E151A77912C001CA145 /* mixseafood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mixseafood.png; sourceTree = "<group>"; };
+		26290E151A77912C001CA145 /* home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home2.png; sourceTree = "<group>"; };
 		26290E191A7792C3001CA145 /* SeaFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaFood.h; sourceTree = "<group>"; };
 		26290E1A1A7792C3001CA145 /* SeaFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaFood.m; sourceTree = "<group>"; };
 		26290E1C1A7797BF001CA145 /* FoodTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewCell.h; sourceTree = "<group>"; };
@@ -130,6 +148,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26021F121A80EDA40096E302 /* M6UniversalParallaxViewController */ = {
+			isa = PBXGroup;
+			children = (
+				26021F131A80EDA40096E302 /* M6HeaderInsetTableView.h */,
+				26021F141A80EDA40096E302 /* M6HeaderInsetTableView.m */,
+				26021F151A80EDA40096E302 /* M6UniversalParallaxViewController.h */,
+				26021F161A80EDA40096E302 /* M6UniversalParallaxViewController.m */,
+				26021F171A80EDA40096E302 /* M6UniversalParallaxViewController.xib */,
+			);
+			path = M6UniversalParallaxViewController;
+			sourceTree = "<group>";
+		};
+		26021F1E1A80EDBB0096E302 /* ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				26021F1F1A80EDBB0096E302 /* UIImage+ImageEffects.h */,
+				26021F201A80EDBB0096E302 /* UIImage+ImageEffects.m */,
+			);
+			path = ImageEffects;
+			sourceTree = "<group>";
+		};
 		2615C6131A78FF8E006B2497 /* imageTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +227,7 @@
 				2692EC6E1A7642E900C5201F /* MainTabBarViewController.m */,
 				2692EC801A76495500C5201F /* BaseNavigationViewController.h */,
 				2692EC811A76495500C5201F /* BaseNavigationViewController.m */,
+				26021F121A80EDA40096E302 /* M6UniversalParallaxViewController */,
 				26290E181A77928A001CA145 /* Model */,
 				2692EC731A7646F700C5201F /* Home */,
 				2692EC741A76470800C5201F /* Menu */,
@@ -234,8 +274,9 @@
 			isa = PBXGroup;
 			children = (
 				2615C6131A78FF8E006B2497 /* imageTest */,
-				26290E141A77912C001CA145 /* food.png */,
-				26290E151A77912C001CA145 /* mixseafood.png */,
+				26021F0D1A80EC940096E302 /* home1.png */,
+				26290E151A77912C001CA145 /* home2.png */,
+				26021F101A80ED580096E302 /* home3.png */,
 				26290E121A773AE4001CA145 /* TabBar-BG.png */,
 				2692EC541A76402A00C5201F /* edit.png */,
 				2692EC551A76402A00C5201F /* mail.png */,
@@ -259,6 +300,10 @@
 			children = (
 				2692EC701A7646D800C5201F /* HomeViewController.h */,
 				2692EC711A7646D800C5201F /* HomeViewController.m */,
+				26021F1B1A80EDBB0096E302 /* FancyViewController.h */,
+				26021F1C1A80EDBB0096E302 /* FancyViewController.m */,
+				26021F1D1A80EDBB0096E302 /* FancyViewController.xib */,
+				26021F1E1A80EDBB0096E302 /* ImageEffects */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -373,6 +418,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2615C61D1A78FFA9006B2497 /* food4.png in Resources */,
+				26021F111A80ED580096E302 /* home3.png in Resources */,
+				26021F0F1A80EC940096E302 /* home1.png in Resources */,
 				2692EC611A76402A00C5201F /* home.png in Resources */,
 				2692EC5F1A76402A00C5201F /* edit.png in Resources */,
 				2692EC651A76402A00C5201F /* save.png in Resources */,
@@ -388,14 +435,15 @@
 				2692EC661A76402A00C5201F /* settings 1.png in Resources */,
 				2692EC691A76402A00C5201F /* tags.png in Resources */,
 				2615C6121A78BF83006B2497 /* SeaFoodTest.plist in Resources */,
+				26021F1A1A80EDA40096E302 /* M6UniversalParallaxViewController.xib in Resources */,
 				2692EC681A76402A00C5201F /* spinner.png in Resources */,
 				2692EC521A76349B00C5201F /* logo1.png in Resources */,
 				2615C61A1A78FFA9006B2497 /* food1.png in Resources */,
 				2615C61B1A78FFA9006B2497 /* food2.png in Resources */,
+				26021F221A80EDBB0096E302 /* FancyViewController.xib in Resources */,
 				2692EC641A76402A00C5201F /* profile.png in Resources */,
-				26290E171A77912C001CA145 /* mixseafood.png in Resources */,
+				26290E171A77912C001CA145 /* home2.png in Resources */,
 				2615C61F1A78FFA9006B2497 /* food6.png in Resources */,
-				26290E161A77912C001CA145 /* food.png in Resources */,
 				2692EC601A76402A00C5201F /* mail.png in Resources */,
 				2692EC371A762CF600C5201F /* Images.xcassets in Resources */,
 			);
@@ -415,14 +463,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26021F211A80EDBB0096E302 /* FancyViewController.m in Sources */,
 				2692EC7C1A7648FD00C5201F /* HotViewController.m in Sources */,
+				26021F191A80EDA40096E302 /* M6UniversalParallaxViewController.m in Sources */,
 				2692EC6F1A7642E900C5201F /* MainTabBarViewController.m in Sources */,
 				2692EC2F1A762CF600C5201F /* AppDelegate.m in Sources */,
 				2692EC821A76495500C5201F /* BaseNavigationViewController.m in Sources */,
 				2692EC2C1A762CF600C5201F /* main.m in Sources */,
+				26021F181A80EDA40096E302 /* M6HeaderInsetTableView.m in Sources */,
 				2692EC7F1A76490B00C5201F /* ProfileViewController.m in Sources */,
 				2692EC721A7646D800C5201F /* HomeViewController.m in Sources */,
 				26220C001A7B901100FA2F25 /* MenuDetailViewController.m in Sources */,
+				26021F231A80EDBB0096E302 /* UIImage+ImageEffects.m in Sources */,
 				2692EC791A7648ED00C5201F /* MenuViewController.m in Sources */,
 				26290E1B1A7792C3001CA145 /* SeaFood.m in Sources */,
 				26290E1E1A7797BF001CA145 /* FoodTableViewCell.m in Sources */,

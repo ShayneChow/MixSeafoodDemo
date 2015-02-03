@@ -79,7 +79,7 @@
 
 #pragma mark返回每行的单元格
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"cellForRow --- %d", indexPath.row);
+    NSLog(@"cellForRow --- %ld", (long)indexPath.row);
     static NSString *cellIdentifier=@"UITableViewCellIdentifierKey1";
     FoodTableViewCell *cell;
     cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
