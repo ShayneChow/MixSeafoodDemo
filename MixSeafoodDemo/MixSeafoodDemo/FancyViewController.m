@@ -99,13 +99,13 @@
     if (scrollView == self.topParallaxScrollView) {
         self.pageControl.currentPage = scrollView.contentOffset.x/scrollView.frame.size.width;
         
-        if (self.pageControl.currentPage == 0) {
-            self.captionLabel.text = @"Castle in France";
-        } else if (self.pageControl.currentPage == 1) {
-            self.captionLabel.text = @"Hospital in Baune";
-        } else if (self.pageControl.currentPage == 2) {
-            self.captionLabel.text = @"Village in countryside";
-        }
+//        if (self.pageControl.currentPage == 0) {
+//            self.captionLabel.text = @"Tab1";
+//        } else if (self.pageControl.currentPage == 1) {
+//            self.captionLabel.text = @"Tab2";
+//        } else if (self.pageControl.currentPage == 2) {
+//            self.captionLabel.text = @"Tab3";
+//        }
     }
     
     //!!!!!!!!!!! always call super
@@ -126,11 +126,11 @@
 ////////////////////////////////////////////////////////////////////////
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 6;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -16,6 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (weak, nonatomic) IBOutlet UIImageView * bluredImageView;
 @property (weak, nonatomic) IBOutlet UILabel *secretLabel;
-@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
 
 @end
