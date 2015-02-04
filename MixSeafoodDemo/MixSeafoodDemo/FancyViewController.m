@@ -15,6 +15,16 @@
 @end
 
 @implementation FancyViewController
+#pragma mark - ViewController-life
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = @"首页";
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"edit"] style:UIBarButtonItemStylePlain target:self action:@selector(checkInToday)];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"pinpoint"] style:UIBarButtonItemStylePlain target:self action:@selector(navigationTo)];
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -28,6 +38,15 @@
     self.bluredImageView.image = [self captureScrollContentViewImageWithBlur];
     
 }
+
+- (void)navigationTo{
+    NSLog(@"navigationTo()方法，打开导航页面");
+}
+
+- (void)checkInToday{
+    NSLog(@"checkInToday()方法，签到页面");
+}
+
 
 - (UIImage *)captureScrollContentViewImageWithBlur {
     

@@ -12,6 +12,7 @@
 #import "MenuViewController.h"
 #import "HotViewController.h"
 #import "ProfileViewController.h"
+#import "FancyViewController.h"
 
 @interface MainTabBarViewController (){
     NSArray *aryImage;    //未选中时的图片
@@ -137,8 +138,11 @@
 #pragma mark - Private Method
 - (void)loadViewControllers{
     // 首页
-    HomeViewController *homeViewController = [[HomeViewController alloc] init];
-    BaseNavigationViewController *homeNavigation = [[BaseNavigationViewController alloc] initWithRootViewController:homeViewController];
+//    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+//    BaseNavigationViewController *homeNavigation = [[BaseNavigationViewController alloc] initWithRootViewController:homeViewController];
+    
+    FancyViewController *fancyViewController = [[FancyViewController alloc] init];
+    BaseNavigationViewController *fancyNavigation = [[BaseNavigationViewController alloc] initWithRootViewController:fancyViewController];
     
     // 菜单
     MenuViewController *menuViewController = [[MenuViewController alloc] init];
@@ -153,7 +157,7 @@
     BaseNavigationViewController *profileNavigation = [[BaseNavigationViewController alloc] initWithRootViewController:profileViewController];
     
     //创建数组，将以上视图的导航控制器添加到导航栏中
-    NSArray *viewControllers = @[homeNavigation, menuNavigaton, hotNavigation, profileNavigation];
+    NSArray *viewControllers = @[fancyNavigation, menuNavigaton, hotNavigation, profileNavigation];
     [self setViewControllers:viewControllers animated:YES];
 }//定义私有方法装载子视图控制器
 
