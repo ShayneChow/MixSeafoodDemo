@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainTabBarViewController.h"
+#import "UMSocial.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +25,9 @@
     
     MainTabBarViewController *mainViewController = [[MainTabBarViewController alloc]init];
     self.window.rootViewController = mainViewController;
+    
+    // 友盟社会化分享SDK
+    [UMSocialData setAppKey:@"54d1e389fd98c5baeb000acd"];
     
     return YES;
 }
