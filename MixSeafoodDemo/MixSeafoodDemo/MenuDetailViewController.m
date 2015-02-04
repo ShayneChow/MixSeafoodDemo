@@ -12,7 +12,7 @@
 #define webViewWidth [UIScreen mainScreen].bounds.size.width // 获取屏幕宽度
 #define webViewHeight [UIScreen mainScreen].bounds.size.height// 定义WebView的高度
 
-@interface MenuDetailViewController ()
+@interface MenuDetailViewController ()<UMSocialUIDelegate>
 
 @end
 
@@ -58,7 +58,6 @@
 }
 
 - (void)shareBtnPressed{
-    NSLog(@"分享这个美食到微博/朋友圈");
     //注意：分享到微信好友、微信朋友圈、微信收藏、QQ空间、QQ好友、来往好友、来往朋友圈、易信好友、易信朋友圈、Facebook、Twitter、Instagram等平台需要参考各自的集成方法
     [UMSocialSnsService presentSnsIconSheetView:self
                                          appKey:@"54d1e389fd98c5baeb000acd"
@@ -66,6 +65,18 @@
                                      shareImage:[UIImage imageNamed:@"icon.png"]
                                 shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToWechatSession, UMShareToWechatTimeline, UMShareToQzone, UMShareToQQ, nil]
                                        delegate:self];
+    [UMSocialData defaultData].extConfig.wechatTimelineData.url = _detailURL;
+}
+
+//实现回调方法（可选）：
+-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
+{
+    //根据`responseCode`得到发送结果,如果分享成功
+    if(response.responseCode == UMSResponseCodeSuccess)
+    {
+        //得到分享到的微博平台名
+        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+    }
 }
 
 @end

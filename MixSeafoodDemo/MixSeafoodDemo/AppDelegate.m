@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainTabBarViewController.h"
 #import "UMSocial.h"
+#import "UMSocialWechatHandler.h"
 
 @interface AppDelegate ()
 
@@ -28,6 +29,8 @@
     
     // 友盟社会化分享SDK
     [UMSocialData setAppKey:@"54d1e389fd98c5baeb000acd"];
+    //设置微信AppId、appSecret，分享url
+    [UMSocialWechatHandler setWXAppId:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" url:@"http://www.umeng.com/social"];
     
     return YES;
 }
@@ -52,6 +55,16 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation{
+    return  [UMSocialSnsService handleOpenURL:url];
 }
 
 @end
