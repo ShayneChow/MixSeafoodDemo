@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UMSocialControllerService.h"
 
-@interface MenuDetailViewController : UIViewController
+@interface MenuDetailViewController : UIViewController<UIActionSheetDelegate, UMSocialUIDelegate>
 
 @property (nonatomic, retain) NSURL *detailURL;
 @property (nonatomic, retain) UIWebView *detailWebView;

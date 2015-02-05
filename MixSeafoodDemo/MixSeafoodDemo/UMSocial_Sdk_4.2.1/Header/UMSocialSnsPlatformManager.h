@@ -20,29 +20,9 @@ extern NSString *const UMShareToSina;
 extern NSString *const UMShareToTencent;
 
 /**
- 人人网
- */
-extern NSString *const UMShareToRenren;
-
-/**
- 豆瓣
- */
-extern NSString *const UMShareToDouban;
-
-/**
  QQ空间
  */
 extern NSString *const UMShareToQzone;
-
-/**
- 邮箱
- */
-extern NSString *const UMShareToEmail;
-
-/**
- 短信
- */
-extern NSString *const UMShareToSms;
 
 /**
  微信好友
@@ -65,72 +45,6 @@ extern NSString *const UMShareToWechatFavorite;
 extern NSString *const UMShareToQQ;
 
 /**
- Facebook
- */
-extern NSString *const UMShareToFacebook;
-
-/**
- Twitter
- */
-extern NSString *const UMShareToTwitter;
-
-
-/**
- 易信好友
- */
-extern NSString *const UMShareToYXSession;
-
-/**
- 易信朋友圈
- */
-extern NSString *const UMShareToYXTimeline;
-
-/**
- 来往好友
- */
-extern NSString *const UMShareToLWSession;
-
-/**
- 来往朋友圈
- */
-extern NSString *const UMShareToLWTimeline;
-
-/**
- 分享到Instragram
- */
-extern NSString *const UMShareToInstagram;
-
-/**
- 分享到Whatsapp
- */
-extern NSString *const UMShareToWhatsapp;
-
-/**
- 分享到Line
- */
-extern NSString *const UMShareToLine;
-
-/**
- 分享到Tumblr
- */
-extern NSString *const UMShareToTumblr;
-
-/**
- 分享到Pinterest
- */
-extern NSString *const UMShareToPinterest;
-
-/**
- 分享到KakaoTalk
- */
-extern NSString *const UMShareToKakaoTalk;
-
-/**
- 分享到Flickr
- */
-extern NSString *const UMShareToFlickr;
-
-/**
  分享平台
  
  */
@@ -139,28 +53,10 @@ typedef enum {
     UMSocialSnsTypeQzone = 10,
     UMSocialSnsTypeSina,                  //sina weibo
     UMSocialSnsTypeTenc,                  //tencent weibo
-    UMSocialSnsTypeRenr,                  //renren
-    UMSocialSnsTypeDouban,                //douban
     UMSocialSnsTypeWechatSession,
     UMSocialSnsTypeWechatTimeline,
     UMSocialSnsTypeWechatFavorite,
-    UMSocialSnsTypeEmail,
-    UMSocialSnsTypeSms,
-    UMSocialSnsTypeMobileQQ,
-    UMSocialSnsTypeFacebook,
-    UMSocialSnsTypeTwitter,
-    UMSocialSnsTypeYiXinSession,
-    UMSocialSnsTypeYiXinTimeline,
-    UMSocialSnsTypeLaiWangSession,
-    UMSocialSnsTypeLaiWangTimeline,
-    UMSocialSnsTypeInstagram,
-    UMSocialSnsTypeWhatsApp,
-    UMSocialSnsTypeLine,
-    UMSocialSnsTypeTumblr,
-    UMSocialSnsTypeKakaoTalk,
-    UMSocialSnsTypeFlickr,
-    UMSocialSnsTypePinterest,
-    UMSocialSnsTypeNew
+    UMSocialSnsTypeMobileQQ
 } UMSocialSnsType;
 
 

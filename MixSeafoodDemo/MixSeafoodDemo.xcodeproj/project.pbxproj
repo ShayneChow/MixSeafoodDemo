@@ -40,6 +40,16 @@
 		261E617C1A8223A6004FE10C /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E61671A8223A6004FE10C /* libSocialWechat.a */; };
 		261E617D1A8223A6004FE10C /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E61681A8223A6004FE10C /* libWeChatSDK.a */; };
 		26220C001A7B901100FA2F25 /* MenuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26220BFF1A7B901100FA2F25 /* MenuDetailViewController.m */; };
+		262265231A830D0500904403 /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 262265221A830D0500904403 /* share@2x.png */; };
+		262265271A83219A00904403 /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 262265251A83219A00904403 /* libSocialSina.a */; };
+		262265291A83450300904403 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262265281A83450300904403 /* Security.framework */; };
+		2622652B1A83451B00904403 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2622652A1A83451B00904403 /* libiconv.dylib */; };
+		2622652D1A83452D00904403 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2622652C1A83452D00904403 /* SystemConfiguration.framework */; };
+		2622652F1A83453D00904403 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2622652E1A83453D00904403 /* CoreGraphics.framework */; };
+		262265311A83454C00904403 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 262265301A83454C00904403 /* libsqlite3.dylib */; };
+		262265331A83456500904403 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262265321A83456500904403 /* CoreTelephony.framework */; };
+		262265351A83457600904403 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 262265341A83457600904403 /* libstdc++.dylib */; };
+		262265371A83458300904403 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 262265361A83458300904403 /* libz.dylib */; };
 		26290E131A773AE4001CA145 /* TabBar-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E121A773AE4001CA145 /* TabBar-BG.png */; };
 		26290E171A77912C001CA145 /* home2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E151A77912C001CA145 /* home2@2x.png */; };
 		26290E1B1A7792C3001CA145 /* SeaFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 26290E1A1A7792C3001CA145 /* SeaFood.m */; };
@@ -60,7 +70,6 @@
 		2692EC641A76402A00C5201F /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC591A76402A00C5201F /* profile.png */; };
 		2692EC651A76402A00C5201F /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5A1A76402A00C5201F /* save.png */; };
 		2692EC661A76402A00C5201F /* settings 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5B1A76402A00C5201F /* settings 1.png */; };
-		2692EC671A76402A00C5201F /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5C1A76402A00C5201F /* share.png */; };
 		2692EC681A76402A00C5201F /* spinner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5D1A76402A00C5201F /* spinner.png */; };
 		2692EC691A76402A00C5201F /* tags.png in Resources */ = {isa = PBXBuildFile; fileRef = 2692EC5E1A76402A00C5201F /* tags.png */; };
 		2692EC6F1A7642E900C5201F /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC6E1A7642E900C5201F /* MainTabBarViewController.m */; };
@@ -136,6 +145,17 @@
 		261E616B1A8223A6004FE10C /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		26220BFE1A7B901100FA2F25 /* MenuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuDetailViewController.h; sourceTree = "<group>"; };
 		26220BFF1A7B901100FA2F25 /* MenuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuDetailViewController.m; sourceTree = "<group>"; };
+		262265221A830D0500904403 /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share@2x.png"; sourceTree = "<group>"; };
+		262265251A83219A00904403 /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
+		262265261A83219A00904403 /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
+		262265281A83450300904403 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2622652A1A83451B00904403 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		2622652C1A83452D00904403 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2622652E1A83453D00904403 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		262265301A83454C00904403 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		262265321A83456500904403 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		262265341A83457600904403 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		262265361A83458300904403 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		26290E121A773AE4001CA145 /* TabBar-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar-BG.png"; sourceTree = "<group>"; };
 		26290E151A77912C001CA145 /* home2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home2@2x.png"; sourceTree = "<group>"; };
 		26290E191A7792C3001CA145 /* SeaFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaFood.h; sourceTree = "<group>"; };
@@ -163,7 +183,6 @@
 		2692EC591A76402A00C5201F /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		2692EC5A1A76402A00C5201F /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
 		2692EC5B1A76402A00C5201F /* settings 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings 1.png"; sourceTree = "<group>"; };
-		2692EC5C1A76402A00C5201F /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		2692EC5D1A76402A00C5201F /* spinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spinner.png; sourceTree = "<group>"; };
 		2692EC5E1A76402A00C5201F /* tags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tags.png; sourceTree = "<group>"; };
 		2692EC6D1A7642E900C5201F /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
@@ -185,11 +204,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262265371A83458300904403 /* libz.dylib in Frameworks */,
+				262265351A83457600904403 /* libstdc++.dylib in Frameworks */,
+				262265331A83456500904403 /* CoreTelephony.framework in Frameworks */,
+				262265311A83454C00904403 /* libsqlite3.dylib in Frameworks */,
+				2622652F1A83453D00904403 /* CoreGraphics.framework in Frameworks */,
+				2622652D1A83452D00904403 /* SystemConfiguration.framework in Frameworks */,
+				2622652B1A83451B00904403 /* libiconv.dylib in Frameworks */,
+				262265291A83450300904403 /* Security.framework in Frameworks */,
 				261E61791A8223A6004FE10C /* libSocialQQ.a in Frameworks */,
 				261E617A1A8223A6004FE10C /* TencentOpenAPI.framework in Frameworks */,
 				261E617C1A8223A6004FE10C /* libSocialWechat.a in Frameworks */,
 				261E61561A821FD2004FE10C /* libUMSocial_Sdk_4.2.1.a in Frameworks */,
 				261E617D1A8223A6004FE10C /* libWeChatSDK.a in Frameworks */,
+				262265271A83219A00904403 /* libSocialSina.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +322,7 @@
 		261E61601A8223A6004FE10C /* UMSocial_Sdk_Extra_Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				262265241A83219A00904403 /* Sina */,
 				261E61611A8223A6004FE10C /* TencentOpenAPI */,
 				261E61661A8223A6004FE10C /* Wechat */,
 			);
@@ -332,6 +361,30 @@
 			name = MenuDetail;
 			sourceTree = "<group>";
 		};
+		262265241A83219A00904403 /* Sina */ = {
+			isa = PBXGroup;
+			children = (
+				262265251A83219A00904403 /* libSocialSina.a */,
+				262265261A83219A00904403 /* UMSocialSinaHandler.h */,
+			);
+			path = Sina;
+			sourceTree = "<group>";
+		};
+		262265381A83461600904403 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				262265361A83458300904403 /* libz.dylib */,
+				262265341A83457600904403 /* libstdc++.dylib */,
+				262265321A83456500904403 /* CoreTelephony.framework */,
+				262265301A83454C00904403 /* libsqlite3.dylib */,
+				2622652E1A83453D00904403 /* CoreGraphics.framework */,
+				2622652C1A83452D00904403 /* SystemConfiguration.framework */,
+				2622652A1A83451B00904403 /* libiconv.dylib */,
+				262265281A83450300904403 /* Security.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 		26290E181A77928A001CA145 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +397,7 @@
 		2692EC1D1A762CF600C5201F = {
 			isa = PBXGroup;
 			children = (
+				262265381A83461600904403 /* Framework */,
 				2692EC281A762CF600C5201F /* MixSeafoodDemo */,
 				2692EC421A762CF600C5201F /* MixSeafoodDemoTests */,
 				2692EC271A762CF600C5201F /* Products */,
@@ -429,7 +483,7 @@
 				2692EC591A76402A00C5201F /* profile.png */,
 				2692EC5A1A76402A00C5201F /* save.png */,
 				2692EC5B1A76402A00C5201F /* settings 1.png */,
-				2692EC5C1A76402A00C5201F /* share.png */,
+				262265221A830D0500904403 /* share@2x.png */,
 				2692EC5D1A76402A00C5201F /* spinner.png */,
 				2692EC5E1A76402A00C5201F /* tags.png */,
 				2692EC501A76349B00C5201F /* logo1.png */,
@@ -567,10 +621,10 @@
 				261E615D1A821FD2004FE10C /* UMSnsAccountViewController.xib in Resources */,
 				2692EC611A76402A00C5201F /* home.png in Resources */,
 				2692EC5F1A76402A00C5201F /* edit.png in Resources */,
+				262265231A830D0500904403 /* share@2x.png in Resources */,
 				2692EC651A76402A00C5201F /* save.png in Resources */,
 				26290E131A773AE4001CA145 /* TabBar-BG.png in Resources */,
 				261E615E1A821FD2004FE10C /* UMSShareListController.xib in Resources */,
-				2692EC671A76402A00C5201F /* share.png in Resources */,
 				2692EC351A762CF600C5201F /* Main.storyboard in Resources */,
 				2692EC631A76402A00C5201F /* pinpoint.png in Resources */,
 				261E61591A821FD2004FE10C /* UMSCommentInputControlleriPad.xib in Resources */,
@@ -776,6 +830,7 @@
 					"$(PROJECT_DIR)/MixSeafoodDemo/UMSocial_Sdk_4.2.1",
 					"$(PROJECT_DIR)/MixSeafoodDemo/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/MixSeafoodDemo/UMSocial_Sdk_Extra_Frameworks/Wechat",
+					"$(PROJECT_DIR)/MixSeafoodDemo/UMSocial_Sdk_Extra_Frameworks/Sina",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -797,6 +852,7 @@
 					"$(PROJECT_DIR)/MixSeafoodDemo/UMSocial_Sdk_4.2.1",
 					"$(PROJECT_DIR)/MixSeafoodDemo/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/MixSeafoodDemo/UMSocial_Sdk_Extra_Frameworks/Wechat",
+					"$(PROJECT_DIR)/MixSeafoodDemo/UMSocial_Sdk_Extra_Frameworks/Sina",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

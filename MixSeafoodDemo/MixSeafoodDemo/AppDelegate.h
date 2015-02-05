@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UMSocialControllerService.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#define UmengAppkey @"54d1e389fd98c5baeb000acd"
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UIActionSheetDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
