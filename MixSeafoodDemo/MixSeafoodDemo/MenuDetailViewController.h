@@ -12,6 +12,8 @@
 @interface MenuDetailViewController : UIViewController<UIActionSheetDelegate, UMSocialUIDelegate>
 
 @property (nonatomic, retain) NSURL *detailURL;
+@property (nonatomic, copy) NSString *detailImage;  // 分享菜单主图
+@property (nonatomic, copy) NSString *detailDesc;  // 分享菜单标题
 @property (nonatomic, retain) UIWebView *detailWebView;
 
 @end

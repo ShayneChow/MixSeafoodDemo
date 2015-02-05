@@ -109,6 +109,8 @@
     MenuDetailViewController *menuDetailViewController = [[MenuDetailViewController alloc] init];
     
     menuDetailViewController.detailURL = [[NSURL alloc] initWithString:food.detailURL];
+    menuDetailViewController.detailDesc = food.foodInfo;
+    menuDetailViewController.detailImage = food.foodImage;
     [self.navigationController pushViewController:menuDetailViewController animated:YES];
 }
 

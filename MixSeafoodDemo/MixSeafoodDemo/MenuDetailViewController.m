@@ -13,9 +13,6 @@
 #define webViewWidth [UIScreen mainScreen].bounds.size.width // 获取屏幕宽度
 #define webViewHeight [UIScreen mainScreen].bounds.size.height// 定义WebView的高度
 
-#define kTagShareEdit 101
-#define kTagSharePost 102
-
 @interface MenuDetailViewController ()<UMSocialUIDelegate>
 
 @end
@@ -68,8 +65,8 @@
 
 - (void)shareBtnPressed{
     //注意：分享到微信好友、微信朋友圈、微信收藏、QQ空间、QQ好友、来往好友、来往朋友圈、易信好友、易信朋友圈、Facebook、Twitter、Instagram等平台需要参考各自的集成方法
-    NSString *shareText = @"来自MixSeafood测试项目的分享，powered by 友盟，@ShayneChow http://shaynechow.github.io/"; //分享内嵌文字
-    UIImage *shareImage = [UIImage imageNamed:@"icon"];  // 分享内嵌图片
+    NSString *shareText = _detailDesc; //分享内嵌文字
+    UIImage *shareImage = [UIImage imageNamed:_detailImage];  // 分享内嵌图片
     NSString *urlString = [_detailURL absoluteString];   // 分享URL
     
     //调用快速分享接口
