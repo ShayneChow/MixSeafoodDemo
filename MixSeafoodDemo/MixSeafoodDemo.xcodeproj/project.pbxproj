@@ -78,6 +78,8 @@
 		2692EC7C1A7648FD00C5201F /* HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC7B1A7648FD00C5201F /* HotViewController.m */; };
 		2692EC7F1A76490B00C5201F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC7E1A76490B00C5201F /* ProfileViewController.m */; };
 		2692EC821A76495500C5201F /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC811A76495500C5201F /* BaseNavigationViewController.m */; };
+		26CD35FA1A84734B0089A1D3 /* HomeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26CD35F91A84734B0089A1D3 /* HomeList.plist */; };
+		26CD35FD1A84B5D90089A1D3 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CD35FC1A84B5D90089A1D3 /* NewsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +199,9 @@
 		2692EC7E1A76490B00C5201F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		2692EC801A76495500C5201F /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
 		2692EC811A76495500C5201F /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		26CD35F91A84734B0089A1D3 /* HomeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomeList.plist; sourceTree = "<group>"; };
+		26CD35FB1A84B5D90089A1D3 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		26CD35FC1A84B5D90089A1D3 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -444,6 +449,7 @@
 				2692EC4F1A76346F00C5201F /* images */,
 				2692EC2A1A762CF600C5201F /* Info.plist */,
 				2615C6111A78BF83006B2497 /* SeaFoodTest.plist */,
+				26CD35F91A84734B0089A1D3 /* HomeList.plist */,
 				2692EC2B1A762CF600C5201F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -500,6 +506,8 @@
 				26021F1B1A80EDBB0096E302 /* FancyViewController.h */,
 				26021F1C1A80EDBB0096E302 /* FancyViewController.m */,
 				26021F1D1A80EDBB0096E302 /* FancyViewController.xib */,
+				26CD35FB1A84B5D90089A1D3 /* NewsTableViewCell.h */,
+				26CD35FC1A84B5D90089A1D3 /* NewsTableViewCell.m */,
 				26021F1E1A80EDBB0096E302 /* ImageEffects */,
 			);
 			name = Home;
@@ -650,6 +658,7 @@
 				2615C61B1A78FFA9006B2497 /* food2.png in Resources */,
 				26021F221A80EDBB0096E302 /* FancyViewController.xib in Resources */,
 				261E615F1A821FD2004FE10C /* UMSocialSDKResourcesNew.bundle in Resources */,
+				26CD35FA1A84734B0089A1D3 /* HomeList.plist in Resources */,
 				2692EC641A76402A00C5201F /* profile.png in Resources */,
 				26290E171A77912C001CA145 /* home2@2x.png in Resources */,
 				2615C61F1A78FFA9006B2497 /* food6.png in Resources */,
@@ -687,6 +696,7 @@
 				26021F231A80EDBB0096E302 /* UIImage+ImageEffects.m in Sources */,
 				2692EC791A7648ED00C5201F /* MenuViewController.m in Sources */,
 				26290E1B1A7792C3001CA145 /* SeaFood.m in Sources */,
+				26CD35FD1A84B5D90089A1D3 /* NewsTableViewCell.m in Sources */,
 				26290E1E1A7797BF001CA145 /* FoodTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,8 +7,9 @@
 //
 
 #import "FancyViewController.h"
-
 #import "UIImage+ImageEffects.h"
+
+#define SectionHeaderHeight 40.0
 
 @interface FancyViewController ()
 
@@ -140,8 +141,54 @@
     return cell;
 }
 
+#pragma mark - UITableView 代理方法
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
+}// 设置每行行高
+
+// 设置Header的标题
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return [NSString stringWithFormat:@"Section %@", @(section)];
+    if(section == 0)
+        return @"APP专享--因你不同";
+    else
+        return @"最新资讯--新鲜速递";
+}
+
+// 设置Header的高度
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return SectionHeaderHeight;
+}
+
+// 自定义Header
+//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    NSString *sectionTitle = [self tableView:tableView titleForHeaderInSection:section];
+//    if (sectionTitle == nil) {
+//        return nil;
+//    }
+//    
+//    UILabel *label = [[UILabel alloc] init];
+//    label.frame = CGRectMake(10, 0, 320, 20);
+//    label.backgroundColor = [UIColor clearColor];
+//    label.textColor = [UIColor colorWithRed:23/255.0 green:180/255.0 blue:237/255.0 alpha:1];
+//    label.shadowColor = [UIColor grayColor];
+//    label.shadowOffset = CGSizeMake(-1.0, 1.0);
+//    label.font = [UIFont boldSystemFontOfSize:16];
+//    label.text = sectionTitle;
+//    
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, SectionHeaderHeight)];
+//    [view addSubview:label];
+//    
+//    return view;
+//}
+
+// 选中行
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"您点击了第%ld分区第%ld行",(long)indexPath.section, (long)indexPath.row);
+    
+    // 取消选中状态
+    // [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
