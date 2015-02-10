@@ -8,6 +8,7 @@
 
 #import "FancyViewController.h"
 #import "UIImage+ImageEffects.h"
+#import "NewsTableViewCell.h"
 
 #define SectionHeaderHeight 40.0
 
@@ -33,11 +34,17 @@
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
     
+    [self initData];
+    
     [self.topParallaxScrollView addSubview:self.scrollContentView];
     self.topParallaxScrollView.contentSize = self.scrollContentView.frame.size;
     
     self.bluredImageView.image = [self captureScrollContentViewImageWithBlur];
     
+}
+
+- (void)initData{
+    listSections = [[NSMutableArray alloc] initWithObjects:@"APP专享--因你不同",@"最新资讯--新鲜速递", nil];
 }
 
 - (void)navigationTo{
@@ -127,7 +134,7 @@
 ////////////////////////////////////////////////////////////////////////
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return [listSections count];;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -148,10 +155,7 @@
 
 // 设置Header的标题
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if(section == 0)
-        return @"APP专享--因你不同";
-    else
-        return @"最新资讯--新鲜速递";
+    return [listSections objectAtIndex:section];
 }
 
 // 设置Header的高度

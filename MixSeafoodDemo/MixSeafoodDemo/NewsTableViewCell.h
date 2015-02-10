@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class News;
 
 @interface NewsTableViewCell : UITableViewCell
+
+#pragma mark 微博对象
+@property (nonatomic,strong) News *news;
 
 @end

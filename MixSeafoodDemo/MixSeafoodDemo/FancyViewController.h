@@ -8,7 +8,10 @@
 
 #import "M6UniversalParallaxViewController.h"
 
-@interface FancyViewController : M6UniversalParallaxViewController
+@interface FancyViewController : M6UniversalParallaxViewController{
+    NSMutableArray *listSections;
+    NSMutableArray *listData;
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UIView *scrollContentView;
