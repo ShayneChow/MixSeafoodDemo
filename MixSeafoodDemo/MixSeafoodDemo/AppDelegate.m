@@ -35,7 +35,7 @@
     //[UMSocialConfig setSupportedInterfaceOrientations:UIInterfaceOrientationMaskAll];
     
     //设置微信AppId，设置分享url，默认nil使用友盟的网址
-    [UMSocialWechatHandler setWXAppId:@"wxaac609a33fd0d3b6" appSecret:@"d3e1ec8f389db2cfff4eb074942eab5b" url:@"http://www.mixseafood.com/"];
+    [UMSocialWechatHandler setWXAppId:@"wx173c78304f49002f" appSecret:@"cda063f0a2adc495e348048b1dd3ba51" url:@"http://www.mixseafood.com/"];
     
     //打开新浪微博的SSO开关
     [UMSocialSinaHandler openSSOWithRedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
