@@ -28,7 +28,7 @@
 		<key>info</key>
 		<string>大龙虾介绍</string>
 		<key>url</key>
-		<string>http://www.baidu.com/</string>
+		<string>http://shaynechow.github.io/about</string>
 	</dict>
 	<dict>
 		<key>no</key>
@@ -42,7 +42,7 @@
 		<key>info</key>
 		<string>蓝龙虾真的牛逼么</string>
 		<key>url</key>
-		<string>http://www.zhihu.com/</string>
+		<string>http://shaynechow.github.io/opinion</string>
 	</dict>
 	<dict>
 		<key>no</key>
@@ -56,7 +56,7 @@
 		<key>info</key>
 		<string>一个餐后甜品</string>
 		<key>url</key>
-		<string>http://www.cocoachina.com/ios/</string>
+		<string>http://shaynechow.github.io/blog</string>
 	</dict>
 	<dict>
 		<key>no</key>

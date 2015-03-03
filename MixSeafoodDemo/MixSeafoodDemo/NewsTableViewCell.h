@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#define kRowHeight 100.0
+
 @class News;
 
 @interface NewsTableViewCell : UITableViewCell
 
-#pragma mark 微博对象
+#pragma mark 新闻对象
 @property (nonatomic,strong) News *news;
 
 @end

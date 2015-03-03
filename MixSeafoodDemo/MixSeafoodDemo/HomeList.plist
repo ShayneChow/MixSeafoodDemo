@@ -1,55 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array>
-	<dict>
-		<key>APP专享--因你不同</key>
+<dict>
+	<key>APP专享--因你不同</key>
+	<array>
 		<dict>
-			<key>Item0</key>
-			<dict>
-				<key>title</key>
-				<string>2015，够重你就来！</string>
-				<key>image</key>
-				<string>icon.png</string>
-				<key>desc</key>
-				<string>当需要开发者手动适配的时候，跟 iPhone 4 过渡到 iPhone 5 一样，在新程序中，指定一张新的启动图片。当指定了启动图，屏幕分辨率就已经变成应有的大小，这时候利用 AutoLayout 进行布局。</string>
-				<key>url</key>
-				<string>http://www.mixseafood.com/</string>
-				<key>date</key>
-				<string>2015-02-10</string>
-			</dict>
-			<key>Item1</key>
-			<dict>
-				<key>title</key>
-				<string>带你装逼，带你飞！</string>
-				<key>image</key>
-				<string>icon.png</string>
-				<key>desc</key>
-				<string>当需要开发者手动适配的时候，跟 iPhone 4 过渡到 iPhone 5 一样，在新程序中，指定一张新的启动图片。当指定了启动图，屏幕分辨率就已经变成应有的大小，这时候利用 AutoLayout 进行布局。</string>
-				<key>url</key>
-				<string>http://www.mixseafood.com/</string>
-				<key>date</key>
-				<string>2015-02-19</string>
-			</dict>
+			<key>title</key>
+			<string>2015，够重你就来！</string>
+			<key>image</key>
+			<string>icon.png</string>
+			<key>desc</key>
+			<string>当需要开发者手动适配的时候，跟 iPhone 4 过渡到 iPhone 5 一样，在新程序中，指定一张新的启动图片。当指定了启动图，屏幕分辨率就已经变成应有的大小，这时候利用 AutoLayout 进行布局。</string>
+			<key>url</key>
+			<string>http://www.mixseafood.com/</string>
+			<key>date</key>
+			<string>2015-02-10</string>
 		</dict>
-		<key>最新资讯--新鲜速递</key>
 		<dict>
-			<key>New item</key>
-			<array/>
-			<key>Item0</key>
-			<dict>
-				<key>title</key>
-				<string>分店开业，惊喜不断。</string>
-				<key>image</key>
-				<string>icon.png</string>
-				<key>desc</key>
-				<string>接下来就定义一个KCStatusTableViewCell实现UITableViewCell，一般实现自定义UITableViewCell需要分为两步：第一初始化控件；第二设置数据，重新设置控件frame。原因就是自定义Cell一般无法固定高度，很多时候高度需要随着内容改变。此外由于在单元格内部是无法控制单元格高度的，因此一般会定义一个高度属性用于在UITableView的代理事件中设置每个单元格高度。</string>
-				<key>url</key>
-				<string>http://www.mixseafood.com/</string>
-				<key>date</key>
-				<string>2015-02-10</string>
-			</dict>
+			<key>title</key>
+			<string>带你装逼，带你飞！</string>
+			<key>image</key>
+			<string>icon.png</string>
+			<key>desc</key>
+			<string>当需要开发者手动适配的时候，跟 iPhone 4 过渡到 iPhone 5 一样，在新程序中，指定一张新的启动图片。当指定了启动图，屏幕分辨率就已经变成应有的大小，这时候利用 AutoLayout 进行布局。</string>
+			<key>url</key>
+			<string>http://www.mixseafood.com/</string>
+			<key>date</key>
+			<string>2015-02-19</string>
 		</dict>
-	</dict>
-</array>
+	</array>
+	<key>最新资讯--新鲜速递</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>2015，够重你就来！</string>
+			<key>image</key>
+			<string>icon.png</string>
+			<key>desc</key>
+			<string>当需要开发者手动适配的时候，跟 iPhone 4 过渡到 iPhone 5 一样，在新程序中，指定一张新的启动图片。当指定了启动图，屏幕分辨率就已经变成应有的大小，这时候利用 AutoLayout 进行布局。</string>
+			<key>url</key>
+			<string>http://www.mixseafood.com/</string>
+			<key>date</key>
+			<string>2015-02-10</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>分店开业，惊喜不断。</string>
+			<key>image</key>
+			<string>icon.png</string>
+			<key>desc</key>
+			<string>接下来就定义一个KCStatusTableViewCell实现UITableViewCell，一般实现自定义UITableViewCell需要分为两步：第一初始化控件；第二设置数据，重新设置控件frame。原因就是自定义Cell一般无法固定高度，很多时候高度需要随着内容改变。此外由于在单元格内部是无法控制单元格高度的，因此一般会定义一个高度属性用于在UITableView的代理事件中设置每个单元格高度。</string>
+			<key>url</key>
+			<string>http://www.mixseafood.com/</string>
+			<key>date</key>
+			<string>2015-02-10</string>
+		</dict>
+	</array>
+</dict>
 </plist>

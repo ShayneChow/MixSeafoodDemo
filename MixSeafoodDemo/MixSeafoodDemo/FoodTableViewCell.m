@@ -124,7 +124,7 @@
 - (void)shareBtnPressed{
     NSLog(@"分享这个美食到微博/朋友圈");
     // 1.创建弹框
-    UIAlertView *alertShare = [[UIAlertView alloc] initWithTitle:@"分享到微博/朋友圈" message:@"敬请期待……" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    UIAlertView *alertShare = [[UIAlertView alloc] initWithTitle:@"分享到微博/朋友圈" message:@"已在详情页中实现，在此暂不提供" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
     
     // 2.显示弹框
     [alertShare show];

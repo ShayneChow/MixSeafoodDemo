@@ -9,10 +9,15 @@
 #import "FancyViewController.h"
 #import "UIImage+ImageEffects.h"
 #import "NewsTableViewCell.h"
+#import "News.h"
 
 #define SectionHeaderHeight 40.0
+//#define kRowHeight 100.0
 
-@interface FancyViewController ()
+@interface FancyViewController (){
+//    NSMutableDictionary *_dicForHome;
+    NSMutableArray      *_news;
+}
 
 @end
 
@@ -44,7 +49,15 @@
 }
 
 - (void)initData{
-    listSections = [[NSMutableArray alloc] initWithObjects:@"APP专享--因你不同",@"最新资讯--新鲜速递", nil];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"HomeList.plist" ofType:nil]];
+    NSArray *array = [dict allKeys];
+    NSLog(@"array : %@",array);
+    _news = [NSMutableArray array];
+    for (NSDictionary *dic in array) {
+        [_news addObject:[News newsWithDictionary:dic]];
+    }
+    
+//    listSections = [[NSMutableArray alloc] initWithObjects:@"APP专享--因你不同",@"最新资讯--新鲜速递", nil];
 }
 
 - (void)navigationTo{
@@ -134,23 +147,30 @@
 ////////////////////////////////////////////////////////////////////////
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [listSections count];;
+    return [listSections count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return _news.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellId = @"news";
+    NewsTableViewCell *cell;
+    cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if(!cell){
+        cell=[[NewsTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+    }
     
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class])];
+    News *news = _news[indexPath.row];
+    cell.news = news;
     cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", @(indexPath.section), @(indexPath.row)];
     return cell;
 }
 
 #pragma mark - UITableView 代理方法
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
+    return kRowHeight;
 }// 设置每行行高
 
 // 设置Header的标题

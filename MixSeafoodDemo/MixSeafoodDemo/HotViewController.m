@@ -45,7 +45,7 @@
     _tableView.dataSource=self;
     //设置代理
     _tableView.delegate=self;
-    NSLog(@"cell");
+    
     [self.view addSubview:_tableView];
 }
 
