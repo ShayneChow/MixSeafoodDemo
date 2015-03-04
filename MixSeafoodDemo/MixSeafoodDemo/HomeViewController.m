@@ -10,10 +10,11 @@
 #import "NewsTableViewCell.h"
 #import "News.h"
 
+#define SectionHeaderHeight 40.0
+
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>{
     UITableView     *_tableView;
     NSMutableArray  *_news;
-    NSMutableArray *_newsCells;//存储cell
 }
 
 @end
@@ -49,20 +50,17 @@
 }
 
 - (void)initData{
-    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"HomeList" ofType:@"plist"]];
-    NSMutableArray *array = [NSMutableArray arrayWithArray:[dict allKeys]];
-    NSLog(@"array : %@",array[0]);
-    
-    _news = [[NSMutableArray alloc] init];
-//    _news = array;
-//    for (NSDictionary *dic in array) {
-//        [_news addObject:[News newsWithDictionary:dic]];
-//    }
+//    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"HomeList" ofType:@"plist"]];
+    NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"plist"]];
+    _news = [NSMutableArray array];
+    for (NSDictionary *dic in array) {
+        [_news addObject:[News newsWithDictionary:dic]];
+    }
 }
 
 #pragma mark - UITableViewCell delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -90,27 +88,48 @@
 
 // 设置Header的标题
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"test";
+    return @"新鲜速递 · 资讯活动";
 }
 
 // 设置Header的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 40.0;
+    return SectionHeaderHeight;
+}
+
+// 自定义Header
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    NSString *sectionTitle = [self tableView:tableView titleForHeaderInSection:section];
+    if (sectionTitle == nil) {
+        return nil;
+    }
+
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(10, 10, kScreenWidth, 20);
+//    label.backgroundColor = [UIColor grayColor];
+    label.textColor = [UIColor colorWithRed:23/255.0 green:180/255.0 blue:237/255.0 alpha:1];
+//    label.shadowColor = [UIColor grayColor];
+//    label.shadowOffset = CGSizeMake(-1.0, 1.0);
+    label.font = [UIFont boldSystemFontOfSize:16];
+    label.text = sectionTitle;
+
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, SectionHeaderHeight)];
+    UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, SectionHeaderHeight, kScreenWidth, 1)];    // 分割线
+    line.backgroundColor = [UIColor colorWithRed:23/255.0 green:180/255.0 blue:237/255.0 alpha:1];
+    view.backgroundColor = [UIColor whiteColor];
+    [view addSubview:line];
+    [view addSubview:label];
+
+    return view;
 }
 
 - (void)navigationTo{
     NSLog(@"navigationTo()方法，打开导航页面");
-    
-//    FancyViewController * fvc = [FancyViewController new];
-//    [self.navigationController pushViewController:fvc animated:YES];
 }
 
 - (void)checkInToday{
     CGFloat screenWidth = [UIScreen mainScreen].applicationFrame.size.width;
     NSLog(@"checkInToday()方法，签到页面,并打印screenWidth：%f", screenWidth);
-    
-//    FancyViewController * fvc = [FancyViewController new];
-//    [self.navigationController pushViewController:fvc animated:YES];
 }
 
 @end

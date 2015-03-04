@@ -53,6 +53,7 @@
 		26290E171A77912C001CA145 /* home2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26290E151A77912C001CA145 /* home2@2x.png */; };
 		26290E1B1A7792C3001CA145 /* SeaFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 26290E1A1A7792C3001CA145 /* SeaFood.m */; };
 		26290E1E1A7797BF001CA145 /* FoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26290E1D1A7797BF001CA145 /* FoodTableViewCell.m */; };
+		262AA1FF1AA6B96300076FDA /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 262AA1FE1AA6B96300076FDA /* test.plist */; };
 		264EDDF21A8CB9C500036EC6 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 264EDDEF1A8CB9C500036EC6 /* libWeChatSDK.a */; };
 		2692EC2C1A762CF600C5201F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2B1A762CF600C5201F /* main.m */; };
 		2692EC2F1A762CF600C5201F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2692EC2E1A762CF600C5201F /* AppDelegate.m */; };
@@ -162,6 +163,7 @@
 		26290E1A1A7792C3001CA145 /* SeaFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaFood.m; sourceTree = "<group>"; };
 		26290E1C1A7797BF001CA145 /* FoodTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewCell.h; sourceTree = "<group>"; };
 		26290E1D1A7797BF001CA145 /* FoodTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewCell.m; sourceTree = "<group>"; };
+		262AA1FE1AA6B96300076FDA /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
 		264EDDEF1A8CB9C500036EC6 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		264EDDF01A8CB9C500036EC6 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		264EDDF11A8CB9C500036EC6 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
@@ -441,8 +443,8 @@
 				2692EC761A76478E00C5201F /* Profile */,
 				26220BFD1A7B8FC100FA2F25 /* MenuDetail */,
 				2692EC331A762CF600C5201F /* Main.storyboard */,
-				2692EC361A762CF600C5201F /* Images.xcassets */,
 				2692EC381A762CF600C5201F /* LaunchScreen.xib */,
+				2692EC361A762CF600C5201F /* Images.xcassets */,
 				2692EC291A762CF600C5201F /* Supporting Files */,
 			);
 			path = MixSeafoodDemo;
@@ -455,6 +457,7 @@
 				2692EC2A1A762CF600C5201F /* Info.plist */,
 				2615C6111A78BF83006B2497 /* SeaFoodTest.plist */,
 				26CD35F91A84734B0089A1D3 /* HomeList.plist */,
+				262AA1FE1AA6B96300076FDA /* test.plist */,
 				2692EC2B1A762CF600C5201F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -645,6 +648,7 @@
 				2615C61C1A78FFA9006B2497 /* food3.png in Resources */,
 				2615C61E1A78FFA9006B2497 /* food5.png in Resources */,
 				261E615B1A821FD2004FE10C /* UMShareEditViewControlleriPad.xib in Resources */,
+				262AA1FF1AA6B96300076FDA /* test.plist in Resources */,
 				261E615A1A821FD2004FE10C /* UMShareEditViewController.xib in Resources */,
 				2692EC3A1A762CF600C5201F /* LaunchScreen.xib in Resources */,
 				261E61571A821FD2004FE10C /* UMSCommentDetailController.xib in Resources */,

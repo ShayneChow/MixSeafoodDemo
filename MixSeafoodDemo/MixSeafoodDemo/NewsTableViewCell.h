@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #define kRowHeight 100.0
+#define kScreenWidth [UIScreen mainScreen].applicationFrame.size.width
 
 @class News;
 

@@ -15,7 +15,6 @@
 //#define kRowHeight 100.0
 
 @interface FancyViewController (){
-//    NSMutableDictionary *_dicForHome;
     NSMutableArray      *_news;
 }
 
